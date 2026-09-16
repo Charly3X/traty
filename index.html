@@ -393,7 +393,7 @@ h1 .em{
 }
 .phone:hover{transform:translateY(-8px) rotate(-.7deg)}
 .phone .win{position:relative;display:block;border-radius:24px;overflow:hidden;aspect-ratio:9/14}
-.phone .win img{width:100%;display:block}
+.phone .win img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% var(--focus,12%)}
 /* Низ экрана уходит за край рамки: полный кадр 9:20 на странице читается как
    растянутая полоса, а телефон всё равно длиннее того, что нужно показать. */
 .phone .win::after{
@@ -557,7 +557,9 @@ footer a:hover{border-bottom-color:var(--accent)}
   section{padding:clamp(3.4rem,12vw,5rem) 0}
   h1{font-size:clamp(2.9rem,12.5vw,4rem)}
   .steps{gap:2.8rem}
-  .step .phone{max-width:248px;margin-inline:auto}
+  .step .phone{max-width:330px;margin-inline:auto}
+  .pair{grid-template-columns:1fr!important;max-width:330px;margin-inline:auto}
+  .pair .phone{margin-top:0!important}
   .head{margin-bottom:2.2rem}
   .statrow{grid-template-columns:1fr}
   .vs{grid-template-columns:1fr}
@@ -680,19 +682,19 @@ footer a:hover{border-bottom-color:var(--accent)}
 
     <div class="steps">
       <article class="step rv" data-d="1">
-        <div class="phone"><span class="win"><img src="/traty/assets/pl/shoot.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Ekran aparatu w Traty wycelowany w papierowy paragon"></span></div>
+        <div class="phone"><span class="win"><img src="/traty/assets/pl/shoot.webp" style="--focus:34%" width="540" height="1200" loading="lazy" decoding="async" alt="Ekran aparatu w Traty wycelowany w papierowy paragon"></span></div>
         <span class="n">01</span>
         <h3>Zrób zdjęcie</h3>
         <p>Zmięty, wyblakły, absurdalnie długi — po prostu celuj i rób. Długie paragony są cięte na pasy i czytane po kawałku, a i tak liczą się jako jeden.</p>
       </article>
       <article class="step rv" data-d="2">
-        <div class="phone"><span class="win"><img src="/traty/assets/pl/sorted.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Rozpoznane pozycje paragonu w Traty: nazwa, ilość, cena i kategoria"></span></div>
+        <div class="phone"><span class="win"><img src="/traty/assets/pl/sorted.webp" style="--focus:30%" width="540" height="1200" loading="lazy" decoding="async" alt="Rozpoznane pozycje paragonu w Traty: nazwa, ilość, cena i kategoria"></span></div>
         <span class="n">02</span>
         <h3>Czyta każdą pozycję</h3>
         <p>Nazwa, ilość, cena jednostkowa i kategoria dla każdej pozycji. Sumę, datę i walutę telefon odczytuje sam.</p>
       </article>
       <article class="step rv" data-d="3">
-        <div class="phone"><span class="win"><img src="/traty/assets/pl/home.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Pulpit Traty: suma miesiąca, wydatek na dzień i podział na kategorie"></span></div>
+        <div class="phone"><span class="win"><img src="/traty/assets/pl/home.webp" style="--focus:16%" width="540" height="1200" loading="lazy" decoding="async" alt="Pulpit Traty: suma miesiąca, wydatek na dzień i podział na kategorie"></span></div>
         <span class="n">03</span>
         <h3>Miesiąc sam się sumuje</h3>
         <p>Każdy paragon trafia w jeden obraz miesiąca: suma, średnia, wydatek na dzień i dokładnie to, na co poszło.</p>
@@ -820,9 +822,9 @@ footer a:hover{border-bottom-color:var(--accent)}
         <li>Jasny i ciemny motyw, po polsku, angielsku, ukraińsku i rosyjsku</li>
       </ul>
     </div>
-    <div class="rv" data-d="2" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2.4vw,1.8rem)">
-      <div class="phone"><span class="win"><img src="/traty/assets/pl/receipt.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Rozpoznany paragon w Traty, pozycja po pozycji na arkuszu przypominającym papier"></span></div>
-      <div class="phone" style="margin-top:2.4rem"><span class="win"><img src="/traty/assets/pl/expenses.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Ekran wydatków w Traty: miesiąc po miesiącu, w podziale na kategorie"></span></div>
+    <div class="rv pair" data-d="2" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2.4vw,1.8rem)">
+      <div class="phone"><span class="win"><img src="/traty/assets/pl/receipt.webp" style="--focus:26%" width="540" height="1200" loading="lazy" decoding="async" alt="Rozpoznany paragon w Traty, pozycja po pozycji na arkuszu przypominającym papier"></span></div>
+      <div class="phone" style="margin-top:2.4rem"><span class="win"><img src="/traty/assets/pl/expenses.webp" style="--focus:14%" width="540" height="1200" loading="lazy" decoding="async" alt="Ekran wydatków w Traty: miesiąc po miesiącu, w podziale na kategorie"></span></div>
     </div>
   </div>
 </section>
@@ -843,7 +845,7 @@ footer a:hover{border-bottom-color:var(--accent)}
 <section style="padding-top:0">
   <div class="shell feat flip">
     <div class="rv" style="max-width:320px;margin-inline:auto">
-      <div class="phone"><span class="win"><img src="/traty/assets/pl/widget.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Widżet Traty na ekranie głównym Androida z sumą miesiąca"></span></div>
+      <div class="phone"><span class="win"><img src="/traty/assets/pl/widget.webp" style="--focus:30%" width="540" height="1200" loading="lazy" decoding="async" alt="Widżet Traty na ekranie głównym Androida z sumą miesiąca"></span></div>
     </div>
     <div class="copy rv" data-d="2">
       <p class="eyebrow">Ekran główny</p>

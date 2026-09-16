@@ -393,7 +393,7 @@ h1 .em{
 }
 .phone:hover{transform:translateY(-8px) rotate(-.7deg)}
 .phone .win{position:relative;display:block;border-radius:24px;overflow:hidden;aspect-ratio:9/14}
-.phone .win img{width:100%;display:block}
+.phone .win img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% var(--focus,12%)}
 /* Низ экрана уходит за край рамки: полный кадр 9:20 на странице читается как
    растянутая полоса, а телефон всё равно длиннее того, что нужно показать. */
 .phone .win::after{
@@ -557,7 +557,9 @@ footer a:hover{border-bottom-color:var(--accent)}
   section{padding:clamp(3.4rem,12vw,5rem) 0}
   h1{font-size:clamp(2.9rem,12.5vw,4rem)}
   .steps{gap:2.8rem}
-  .step .phone{max-width:248px;margin-inline:auto}
+  .step .phone{max-width:330px;margin-inline:auto}
+  .pair{grid-template-columns:1fr!important;max-width:330px;margin-inline:auto}
+  .pair .phone{margin-top:0!important}
   .head{margin-bottom:2.2rem}
   .statrow{grid-template-columns:1fr}
   .vs{grid-template-columns:1fr}
@@ -688,19 +690,19 @@ details summary{font-size:1.02rem}
 
     <div class="steps">
       <article class="step rv" data-d="1">
-        <div class="phone"><span class="win"><img src="/traty/assets/uk/shoot.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Екран камери Traty, наведений на паперовий чек"></span></div>
+        <div class="phone"><span class="win"><img src="/traty/assets/uk/shoot.webp" style="--focus:34%" width="540" height="1200" loading="lazy" decoding="async" alt="Екран камери Traty, наведений на паперовий чек"></span></div>
         <span class="n">01</span>
         <h3>Сфотографуйте</h3>
         <p>Зім’ятий, вицвілий, безглуздо довгий — просто наведіть і зніміть. Довгі чеки ріжуться на смуги і читаються частинами, і це однаково один чек.</p>
       </article>
       <article class="step rv" data-d="2">
-        <div class="phone"><span class="win"><img src="/traty/assets/uk/sorted.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнані позиції чека в Traty: назва, кількість, ціна й категорія"></span></div>
+        <div class="phone"><span class="win"><img src="/traty/assets/uk/sorted.webp" style="--focus:30%" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнані позиції чека в Traty: назва, кількість, ціна й категорія"></span></div>
         <span class="n">02</span>
         <h3>Він читає кожен рядок</h3>
         <p>Назва, кількість, ціна за одиницю і категорія для кожної позиції. Суму, дату й валюту телефон читає сам.</p>
       </article>
       <article class="step rv" data-d="3">
-        <div class="phone"><span class="win"><img src="/traty/assets/uk/home.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Головна Traty: сума місяця, витрата на день і розклад за категоріями"></span></div>
+        <div class="phone"><span class="win"><img src="/traty/assets/uk/home.webp" style="--focus:16%" width="540" height="1200" loading="lazy" decoding="async" alt="Головна Traty: сума місяця, витрата на день і розклад за категоріями"></span></div>
         <span class="n">03</span>
         <h3>Місяць складається сам</h3>
         <p>Кожен чек лягає в одну картину місяця: сума, середнє, витрата на день і те, на що саме все пішло.</p>
@@ -828,9 +830,9 @@ details summary{font-size:1.02rem}
         <li>Світла й темна тема, українською, польською, англійською та російською</li>
       </ul>
     </div>
-    <div class="rv" data-d="2" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2.4vw,1.8rem)">
-      <div class="phone"><span class="win"><img src="/traty/assets/uk/receipt.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнаний чек у Traty, рядок за рядком на аркуші, схожому на папір"></span></div>
-      <div class="phone" style="margin-top:2.4rem"><span class="win"><img src="/traty/assets/uk/expenses.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Екран витрат у Traty: місяць за місяцем, за категоріями"></span></div>
+    <div class="rv pair" data-d="2" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2.4vw,1.8rem)">
+      <div class="phone"><span class="win"><img src="/traty/assets/uk/receipt.webp" style="--focus:26%" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнаний чек у Traty, рядок за рядком на аркуші, схожому на папір"></span></div>
+      <div class="phone" style="margin-top:2.4rem"><span class="win"><img src="/traty/assets/uk/expenses.webp" style="--focus:14%" width="540" height="1200" loading="lazy" decoding="async" alt="Екран витрат у Traty: місяць за місяцем, за категоріями"></span></div>
     </div>
   </div>
 </section>
@@ -851,7 +853,7 @@ details summary{font-size:1.02rem}
 <section style="padding-top:0">
   <div class="shell feat flip">
     <div class="rv" style="max-width:320px;margin-inline:auto">
-      <div class="phone"><span class="win"><img src="/traty/assets/uk/widget.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Віджет Traty на головному екрані Android із сумою місяця"></span></div>
+      <div class="phone"><span class="win"><img src="/traty/assets/uk/widget.webp" style="--focus:30%" width="540" height="1200" loading="lazy" decoding="async" alt="Віджет Traty на головному екрані Android із сумою місяця"></span></div>
     </div>
     <div class="copy rv" data-d="2">
       <p class="eyebrow">Головний екран</p>
