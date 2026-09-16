@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+<script>document.documentElement.className += " js";</script>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -369,16 +370,17 @@ h1 .em{
 @keyframes slide{to{transform:translateX(-50%)}}
 
 /* ── reveal ─────────────────────────────────────────────────────────── */
-.rv{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.7,.3,1),transform .75s cubic-bezier(.2,.7,.3,1)}
-.rv.in{opacity:1;transform:none}
-.rv[data-d="1"]{transition-delay:.09s}.rv[data-d="2"]{transition-delay:.18s}
-.rv[data-d="3"]{transition-delay:.27s}.rv[data-d="4"]{transition-delay:.36s}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.7,.3,1),transform .75s cubic-bezier(.2,.7,.3,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv[data-d="1"]{transition-delay:.09s}.js .rv[data-d="2"]{transition-delay:.18s}
+.js .rv[data-d="3"]{transition-delay:.27s}.js .rv[data-d="4"]{transition-delay:.36s}
 
 .head{max-width:60ch;margin-bottom:clamp(2.6rem,5vw,4rem)}
 .head p{margin-top:1.2rem}
 
 /* ── steps ──────────────────────────────────────────────────────────── */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem,3vw,2.6rem)}
+.step .phone{max-width:330px;margin-inline:auto}
 .step .n{font-family:var(--mono);font-size:.78rem;color:var(--accent-2);letter-spacing:.2em;display:block;margin-bottom:.8rem}
 .step h3{margin-bottom:.55rem}
 .step p{color:var(--ink-2);font-size:.98rem}
@@ -390,7 +392,14 @@ h1 .em{
   transition:transform .5s cubic-bezier(.2,.8,.3,1);
 }
 .phone:hover{transform:translateY(-8px) rotate(-.7deg)}
-.phone img{border-radius:24px;width:100%}
+.phone .win{position:relative;display:block;border-radius:24px;overflow:hidden;aspect-ratio:9/14}
+.phone .win img{width:100%;display:block}
+/* Низ экрана уходит за край рамки: полный кадр 9:20 на странице читается как
+   растянутая полоса, а телефон всё равно длиннее того, что нужно показать. */
+.phone .win::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:16%;
+  background:linear-gradient(rgba(11,11,11,0),rgba(11,11,11,.9));
+}
 .phone::before{
   content:"";position:absolute;z-index:2;top:12px;left:50%;transform:translateX(-50%);
   width:62px;height:5px;border-radius:99px;background:rgba(255,255,255,.14);
@@ -679,19 +688,19 @@ details summary{font-size:1.02rem}
 
     <div class="steps">
       <article class="step rv" data-d="1">
-        <div class="phone"><img src="/traty/assets/uk/shoot.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Екран камери Traty, наведений на паперовий чек"></div>
+        <div class="phone"><span class="win"><img src="/traty/assets/uk/shoot.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Екран камери Traty, наведений на паперовий чек"></span></div>
         <span class="n">01</span>
         <h3>Сфотографуйте</h3>
         <p>Зім’ятий, вицвілий, безглуздо довгий — просто наведіть і зніміть. Довгі чеки ріжуться на смуги і читаються частинами, і це однаково один чек.</p>
       </article>
       <article class="step rv" data-d="2">
-        <div class="phone"><img src="/traty/assets/uk/sorted.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнані позиції чека в Traty: назва, кількість, ціна й категорія"></div>
+        <div class="phone"><span class="win"><img src="/traty/assets/uk/sorted.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнані позиції чека в Traty: назва, кількість, ціна й категорія"></span></div>
         <span class="n">02</span>
         <h3>Він читає кожен рядок</h3>
         <p>Назва, кількість, ціна за одиницю і категорія для кожної позиції. Суму, дату й валюту телефон читає сам.</p>
       </article>
       <article class="step rv" data-d="3">
-        <div class="phone"><img src="/traty/assets/uk/home.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Головна Traty: сума місяця, витрата на день і розклад за категоріями"></div>
+        <div class="phone"><span class="win"><img src="/traty/assets/uk/home.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Головна Traty: сума місяця, витрата на день і розклад за категоріями"></span></div>
         <span class="n">03</span>
         <h3>Місяць складається сам</h3>
         <p>Кожен чек лягає в одну картину місяця: сума, середнє, витрата на день і те, на що саме все пішло.</p>
@@ -820,8 +829,8 @@ details summary{font-size:1.02rem}
       </ul>
     </div>
     <div class="rv" data-d="2" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2.4vw,1.8rem)">
-      <div class="phone"><img src="/traty/assets/uk/receipt.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнаний чек у Traty, рядок за рядком на аркуші, схожому на папір"></div>
-      <div class="phone" style="margin-top:2.4rem"><img src="/traty/assets/uk/expenses.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Екран витрат у Traty: місяць за місяцем, за категоріями"></div>
+      <div class="phone"><span class="win"><img src="/traty/assets/uk/receipt.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнаний чек у Traty, рядок за рядком на аркуші, схожому на папір"></span></div>
+      <div class="phone" style="margin-top:2.4rem"><span class="win"><img src="/traty/assets/uk/expenses.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Екран витрат у Traty: місяць за місяцем, за категоріями"></span></div>
     </div>
   </div>
 </section>
@@ -842,7 +851,7 @@ details summary{font-size:1.02rem}
 <section style="padding-top:0">
   <div class="shell feat flip">
     <div class="rv" style="max-width:320px;margin-inline:auto">
-      <div class="phone"><img src="/traty/assets/uk/widget.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Віджет Traty на головному екрані Android із сумою місяця"></div>
+      <div class="phone"><span class="win"><img src="/traty/assets/uk/widget.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Віджет Traty на головному екрані Android із сумою місяця"></span></div>
     </div>
     <div class="copy rv" data-d="2">
       <p class="eyebrow">Головний екран</p>
@@ -1085,6 +1094,18 @@ details summary{font-size:1.02rem}
     });
   };
 
+  const showAll = () => {
+    document.querySelectorAll('.rv, .band, #dash, .pricecard').forEach(el => {
+      el.classList.add('in');
+      el.querySelectorAll('[data-count]').forEach(countUp);
+    });
+    // Заливка графика и точка спрятаны в разметке — их показывает отрисовка,
+    // которой здесь не будет.
+    document.querySelectorAll('.pt, .area').forEach(n => { n.style.opacity = 1; });
+  };
+
+  if (!('IntersectionObserver' in window)) { showAll(); return; }
+
   const io = new IntersectionObserver((entries, obs) => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
@@ -1097,6 +1118,13 @@ details summary{font-size:1.02rem}
   }, {rootMargin: '0px 0px -12% 0px', threshold: .15});
 
   document.querySelectorAll('.rv, .band, #dash, .pricecard').forEach(el => io.observe(el));
+
+  // Последний рубеж: наблюдатель молчит в некоторых окружениях (вкладка,
+  // которую браузер не отрисовывает, старые движки). Пустая страница ниже
+  // первого экрана — куда худший отказ, чем показ без анимации.
+  setTimeout(() => {
+    if (!document.querySelector('.rv.in')) showAll();
+  }, 3000);
 })();
 </script>
 </body>
