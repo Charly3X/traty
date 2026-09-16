@@ -1,0 +1,6 @@
+{
+  "site": "https://charly3x.github.io/traty",
+  "base": "/traty",
+  "langs": ["pl", "uk"],
+  "default": "pl"
+}

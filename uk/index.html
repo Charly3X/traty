@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ── EDIT BEFORE PUBLISHING ────────────────────────────────────────────
+     The address this page will live at appears in <link rel=canonical>,
+     the og:/twitter: tags and the JSON-LD below, and in robots.txt and
+     sitemap.xml next to this file. The Play listing is the href of every
+     call-to-action. See README.md in this folder. -->
+
+<title>Traty — сфотографуй чек, він розкладеться сам | Сканер чеків</title>
+<meta name="description" content="Сфотографуйте паперовий чек — Traty прочитає кожну позицію: назву, ціну, кількість і категорію — і покаже, на що насправді йде місяць. Безкоштовно на старті, на Android. Без ручного введення.">
+<link rel="canonical" href="https://charly3x.github.io/traty/uk/">
+<link rel="alternate" hreflang="pl" href="https://charly3x.github.io/traty/">
+<link rel="alternate" hreflang="uk" href="https://charly3x.github.io/traty/uk/">
+<link rel="alternate" hreflang="x-default" href="https://charly3x.github.io/traty/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0B0B0B">
+<meta name="author" content="Oleksii Charoian">
+<meta name="keywords" content="сканер чеків, додаток для чеків, облік витрат, сімейний бюджет android, продукти, історія цін, витрати за категоріями">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Traty">
+<meta property="og:title" content="Сфотографуй чек. Він розкладеться сам.">
+<meta property="og:description" content="Traty читає кожну позицію паперового чека — назву, ціну, кількість, категорію — і перетворює місяць покупок на кілька чисел, які видно з одного погляду.">
+<meta property="og:url" content="https://charly3x.github.io/traty/uk/">
+<meta property="og:image" content="https://charly3x.github.io/traty/assets/uk/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="uk_UA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Сфотографуй чек. Він розкладеться сам.">
+<meta name="twitter:description" content="Кожна позиція з ціною і категорією. Нічого не набирати руками.">
+<meta name="twitter:image" content="https://charly3x.github.io/traty/assets/uk/og.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Traty",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Android",
+      "description": "Сфотографуйте паперовий чек — Traty прочитає кожну позицію: назву, ціну, кількість і категорію — і покаже, на що насправді йде місяць. Безкоштовно на старті, на Android. Без ручного введення.",
+      "url": "https://charly3x.github.io/traty/uk/",
+      "installUrl": "https://play.google.com/store/apps/details?id=dev.charoian.traty",
+      "image": "https://charly3x.github.io/traty/assets/uk/og.jpg",
+      "inLanguage": [
+        "en",
+        "pl",
+        "uk",
+        "ru"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Oleksii Charoian",
+        "email": "oleksii.charoian@gmail.com"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Безкоштовно",
+          "price": "0",
+          "priceCurrency": "UAH"
+        },
+        {
+          "@type": "Offer",
+          "name": "Traty Plus",
+          "price": "149",
+          "priceCurrency": "UAH"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Як Traty читає чек?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ви його фотографуєте. Суму, дату й валюту телефон читає сам. Список позицій читає модель на нашому сервері — це єдина причина, чому фотографія залишає пристрій. Дуже довгий чек ріжеться на смуги й читається частинами, і це однаково одне розпізнавання."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи зберігається десь фото мого чека?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ні. Фотографія їде, щоб її прочитали, і не зберігається. Якщо ви волієте, щоб із телефона не виходило нічого, вимкніть розпізнавання в налаштуваннях: ручне введення, історія, категорії, розклади й віджет працюють так само."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Це справді безкоштовно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Введення чеків руками, їх правка, уся історія, категорії, розклади, історія цін і віджет безкоштовні й без обмежень, доки ви користуєтеся додатком. Грошей коштує лише читання фотографії, тому безкоштовний тариф містить п’ять розпізнавань, а далі підписка — 149 ₴ на місяць."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "А якщо модель помилилася в рядку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Виправте його. Кожне поле редагується двома дотиками — назва, ціна, кількість, категорія — і додаток попереджає, коли рядки перестають складатися в надруковану суму, тож хибне число буде помічене, а не тихо вшите у ваш місяць."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи може сім'я ділити одну підписку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Так. Підписник створює сім'ю і запрошує до чотирьох людей; приєднання безкоштовне. Усі бачать ті самі чеки й беруть з того самого місячного запасу, тому родині з п'ятьох потрібна одна підписка, а не п'ять."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Які мови й валюти він розуміє?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Додаток говорить українською, польською, англійською та російською, а чеки читає у валюті, надрукованій на них, тож відпускний чек не перетвориться тихо на ваші домашні гроші."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "На яких телефонах він працює?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Android, із Google Play. Версії для iPhone поки немає."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+<link rel="icon" href="/traty/assets/icon.png" sizes="180x180" type="image/png">
+<link rel="apple-touch-icon" href="/traty/assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="/traty/assets/uk/home.webp">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Traty",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "Expense tracker",
+      "operatingSystem": "Android",
+      "description": "Traty turns a photographed paper receipt into line items — name, price, quantity and category — and shows where a month of spending goes. Receipts can also be typed in by hand, free and without limit.",
+      "url": "https://scancheck-617d3.web.app/",
+      "installUrl": "https://play.google.com/store/apps/details?id=dev.charoian.traty",
+      "image": "https://scancheck-617d3.web.app/assets/og.jpg",
+      "inLanguage": ["en", "pl", "uk", "ru"],
+      "author": { "@type": "Person", "name": "Oleksii Charoian", "email": "oleksii.charoian@gmail.com" },
+      "offers": [
+        { "@type": "Offer", "name": "Безкоштовно", "price": "0", "priceCurrency": "USD",
+          "description": "Unlimited manual entry, history, categories, breakdowns and the home-screen widget. Five receipt readings included." },
+        { "@type": "Offer", "name": "Traty Plus", "price": "4.99", "priceCurrency": "USD",
+          "description": "Up to 20 receipt readings a day and 100 a month, plus a shared household of up to five people." }
+      ],
+      "featureList": [
+        "Reads every line of a photographed receipt",
+        "Sorts items into 30 категорій",
+        "Monthly breakdown by category and group",
+        "Історія ціни товару",
+        "Віджет на головному екрані",
+        "Спільна сім'я spending",
+        "English, Polish, Ukrainian and Russian"
+      ]
+    },
+    {
+      "@type": "ПитанняPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Як Traty читає чек?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You photograph the receipt. The total, the date and the currency are read on the phone itself. The list of items is read by a model on our server — that is the only reason the photograph leaves the device." } },
+        { "@type": "Question", "name": "Чи зберігається десь фото мого чека?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The photograph is sent to be read and is not kept. Reading items can be turned off entirely, and the rest of the app keeps working." } },
+        { "@type": "Question", "name": "Is Traty free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Typing receipts in by hand, editing, history, categories, breakdowns and the home-screen widget are free and unlimited, forever. Reading a receipt з фотографіїgraph costs money to run, so the free tier includes five readings; after that a subscription is $4.99 a month." } },
+        { "@type": "Question", "name": "А якщо модель помилилася в рядку?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Every field is editable in two taps — name, price, quantity, category — and the app warns you when the lines stop adding up to the printed total." } },
+        { "@type": "Question", "name": "Чи може сім'я ділити одну підписку?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A subscriber can create a household and invite up to four people. Everyone shares one base of receipts and one pool of readings, so a family needs one subscription, not five." } },
+        { "@type": "Question", "name": "Які мови й валюти він розуміє?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The app speaks English, Polish, Ukrainian and Russian, and reads receipts in the currency printed on them." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* ── tokens: the app's own dark palette, plus its paper ──────────────── */
+:root{
+  --plane:#0B0B0B; --surface:#161615; --surface-2:#1F1F1E;
+  --ink:#FFFFFF; --ink-2:#C6C5BA; --ink-3:#918F89;
+  --line:rgba(255,255,255,.10); --line-soft:rgba(255,255,255,.055);
+  --accent:#F97316; --accent-2:#FB923C; --accent-wash:rgba(249,115,22,.14);
+  --good:#2CB54A;
+  --paper:#FAF7F0; --paper-ink:#1C1A16; --paper-ink-2:#6B6459; --paper-line:#C2B9A4;
+  --c1:#3496EF; --c2:#C969BD; --c3:#8F9C0A; --c4:#4A61C7; --c5:#11A3C1; --c6:#6E6D68;
+  --display:"Unbounded","Manrope",sans-serif;
+  --body:"Manrope",-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;
+  --shell:min(1180px,100% - 3rem);
+  --r:22px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--plane);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.6;letter-spacing:-.005em;overflow-x:clip;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(60rem 42rem at 78% -8%, rgba(249,115,22,.17), transparent 62%),
+    radial-gradient(52rem 40rem at 6% 34%, rgba(52,150,239,.075), transparent 60%),
+    radial-gradient(44rem 34rem at 50% 108%, rgba(249,115,22,.09), transparent 62%);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.3;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+}
+main,header,footer{position:relative;z-index:2}
+.shell{width:var(--shell);margin-inline:auto}
+section{padding:clamp(4.5rem,9vw,8rem) 0;position:relative}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* ── type ───────────────────────────────────────────────────────────── */
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height:.98;margin:0;overflow-wrap:break-word}
+h1{font-size:clamp(3.1rem,8.6vw,7rem)}
+h2{font-size:clamp(2.3rem,5.2vw,4.1rem);line-height:1}
+h3{font-size:clamp(1.3rem,2.1vw,1.7rem);letter-spacing:-.02em;line-height:1.1}
+p{margin:0}
+.lede{font-size:clamp(1.08rem,1.55vw,1.32rem);color:var(--ink-2);line-height:1.55;max-width:46ch}
+.muted{color:var(--ink-3)}
+.eyebrow{
+  font-family:var(--mono);font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--accent-2);display:flex;align-items:center;gap:.8rem;margin-bottom:1.5rem;
+}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--accent);flex:none}
+.tabular{font-variant-numeric:tabular-nums}
+
+/* ── nav ────────────────────────────────────────────────────────────── */
+.nav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(11,11,11,.72);backdrop-filter:blur(18px) saturate(1.3);
+  border-bottom:1px solid transparent;transition:border-color .3s,background .3s;
+}
+.nav[data-stuck="1"]{border-bottom-color:var(--line);background:rgba(11,11,11,.9)}
+.nav .shell{display:flex;align-items:center;gap:2rem;height:68px}
+.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.32rem;letter-spacing:-.03em}
+.brand img{width:30px;height:30px;border-radius:9px}
+.nav-links{display:flex;gap:1.9rem;margin-left:auto;font-size:.94rem;font-weight:500}
+.nav-links a{color:var(--ink-2);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+@media(max-width:860px){.nav-links{display:none}.nav .shell{gap:1rem}}
+
+/* ── buttons ────────────────────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;padding:.92rem 1.5rem;border-radius:999px;
+  font-weight:700;font-size:1rem;text-decoration:none;white-space:nowrap;
+  transition:transform .25s cubic-bezier(.2,.9,.3,1.3),box-shadow .25s,background .25s;
+}
+.btn-primary{background:var(--accent);color:#120A03;box-shadow:0 10px 34px -12px rgba(249,115,22,.85)}
+.btn-primary:hover{transform:translateY(-2px) scale(1.015);box-shadow:0 16px 44px -12px rgba(249,115,22,.95)}
+.btn-ghost{border:1px solid var(--line);color:var(--ink-2);background:rgba(255,255,255,.02)}
+.btn-ghost:hover{color:var(--ink);border-color:rgba(255,255,255,.28);transform:translateY(-2px)}
+.btn-sm{padding:.6rem 1.1rem;font-size:.9rem}
+.langs{display:flex;gap:.15rem;margin-left:auto;align-items:center;font-family:var(--mono);font-size:.76rem;letter-spacing:.08em}
+.langs a{color:var(--ink-3);text-decoration:none;padding:.3rem .5rem;border-radius:7px;transition:color .2s,background .2s}
+.langs a:hover{color:var(--ink);background:rgba(255,255,255,.06)}
+.langs a.on{color:var(--accent-2);background:var(--accent-wash)}
+@media(max-width:560px){.nav .btn-sm{display:none}.langs a{padding:.3rem .4rem}}
+
+/* ── hero ───────────────────────────────────────────────────────────── */
+.hero{padding-top:clamp(3.5rem,7vw,6rem);padding-bottom:clamp(4rem,8vw,7rem);overflow:clip}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+h1 .em{
+  display:block;color:transparent;
+  background:linear-gradient(104deg,var(--accent) 6%,#FFB067 46%,#FFE2C6 92%);
+  -webkit-background-clip:text;background-clip:text;
+}
+.hero p.lede{margin-top:1.7rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.4rem}
+.trust{display:flex;flex-wrap:wrap;gap:.55rem 1.5rem;margin-top:1.9rem;font-size:.92rem;color:var(--ink-3)}
+.trust span{display:flex;align-items:center;gap:.5rem}
+.trust span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--good)}
+
+/* ── hero scene: paper being read into sorted rows ──────────────────── */
+.scene{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(.9rem,2vw,1.6rem);align-items:start}
+.paper{
+  position:relative;background:var(--paper);color:var(--paper-ink);
+  padding:1.5rem 1.15rem 2.1rem;font-family:var(--mono);font-size:.78rem;line-height:1.85;
+  border-radius:5px;transform:rotate(-1.6deg);
+  box-shadow:0 34px 70px -28px rgba(0,0,0,.95),0 3px 10px rgba(0,0,0,.5);
+}
+.paper::after{
+  content:"";position:absolute;left:0;right:0;bottom:-7px;height:8px;background:var(--paper);
+  -webkit-mask-image:repeating-conic-gradient(from -45deg at 50% 0,#000 0deg 90deg,transparent 90deg 180deg);
+  mask-image:repeating-conic-gradient(from -45deg at 50% 0,#000 0deg 90deg,transparent 90deg 180deg);
+  -webkit-mask-size:14px 16px;mask-size:14px 16px;
+}
+.paper .shop{font-weight:700;font-size:.9rem;letter-spacing:.04em}
+.paper .meta{color:var(--paper-ink-2);font-size:.7rem;margin-bottom:.7rem}
+.paper hr{border:0;border-top:1px dashed var(--paper-line);margin:.7rem 0}
+.p-row{display:flex;justify-content:space-between;gap:1rem}
+.p-row span:last-child{font-variant-numeric:tabular-nums}
+.p-sub{color:var(--paper-ink-2);font-size:.68rem;margin-top:-.45rem;margin-bottom:.15rem}
+.p-total{display:flex;justify-content:space-between;font-weight:700;font-size:.95rem}
+.scanline{
+  position:absolute;left:-2%;right:-2%;height:110px;pointer-events:none;border-radius:8px;
+  background:linear-gradient(180deg,transparent,rgba(249,115,22,.17) 46%,rgba(249,115,22,.55) 50%,rgba(249,115,22,.17) 54%,transparent);
+  box-shadow:0 0 34px rgba(249,115,22,.4);
+  animation:sweep 7s cubic-bezier(.5,0,.5,1) infinite;
+}
+@keyframes sweep{
+  0%,4%{top:-14%;opacity:0}
+  8%{opacity:1}
+  46%{top:96%;opacity:1}
+  52%{top:100%;opacity:0}
+  100%{top:100%;opacity:0}
+}
+.sorted{
+  background:linear-gradient(170deg,rgba(255,255,255,.075),rgba(255,255,255,.02));
+  border:1px solid var(--line);border-radius:var(--r);padding:1.15rem 1.15rem 1.35rem;
+  transform:rotate(1.1deg) translateY(1.2rem);
+  box-shadow:0 34px 70px -34px rgba(0,0,0,.9);backdrop-filter:blur(6px);
+}
+.sorted h4{margin:0 0 .15rem;font-family:var(--body);font-size:.92rem;font-weight:700}
+.sorted .cap{font-family:var(--mono);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.9rem}
+.s-row{
+  display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.6rem;
+  padding:.44rem 0;border-bottom:1px solid var(--line-soft);font-size:.86rem;
+  opacity:0;animation:pop 7s cubic-bezier(.2,.8,.3,1) infinite;animation-delay:var(--d);
+}
+.s-row:last-child{border-bottom:0}
+@keyframes pop{
+  0%,3%{opacity:0;transform:translateX(16px) scale(.97)}
+  9%,64%{opacity:1;transform:none}
+  72%,100%{opacity:0;transform:translateX(-6px)}
+}
+.dot{width:9px;height:9px;border-radius:3px;flex:none}
+.s-row b{font-weight:600}
+.s-row em{font-style:normal;color:var(--ink-3);font-size:.72rem;display:block;line-height:1.3}
+.s-row .amt{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:.84rem}
+@media(max-width:1000px){.hero-grid{grid-template-columns:1fr}.scene{max-width:560px}}
+@media(max-width:520px){.scene{grid-template-columns:1fr;gap:1.4rem}.paper,.sorted{transform:none}}
+
+/* ── marquee ────────────────────────────────────────────────────────── */
+.strip{border-block:1px solid var(--line);background:rgba(255,255,255,.018);overflow:hidden}
+.strip .track{display:flex;gap:3.2rem;white-space:nowrap;padding:1.05rem 0;animation:slide 40s linear infinite;width:max-content}
+.strip .track span{font-family:var(--mono);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);display:flex;align-items:center;gap:.9rem}
+.strip .track span::after{content:"◆";color:var(--accent);font-size:.6rem}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ── reveal ─────────────────────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.7,.3,1),transform .75s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+.rv[data-d="1"]{transition-delay:.09s}.rv[data-d="2"]{transition-delay:.18s}
+.rv[data-d="3"]{transition-delay:.27s}.rv[data-d="4"]{transition-delay:.36s}
+
+.head{max-width:60ch;margin-bottom:clamp(2.6rem,5vw,4rem)}
+.head p{margin-top:1.2rem}
+
+/* ── steps ──────────────────────────────────────────────────────────── */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem,3vw,2.6rem)}
+.step .n{font-family:var(--mono);font-size:.78rem;color:var(--accent-2);letter-spacing:.2em;display:block;margin-bottom:.8rem}
+.step h3{margin-bottom:.55rem}
+.step p{color:var(--ink-2);font-size:.98rem}
+.phone{
+  position:relative;margin-bottom:1.6rem;border-radius:30px;padding:7px;
+  background:linear-gradient(160deg,#2B2B29,#0E0E0D 60%);
+  border:1px solid rgba(255,255,255,.1);
+  box-shadow:0 40px 70px -34px rgba(0,0,0,.95);
+  transition:transform .5s cubic-bezier(.2,.8,.3,1);
+}
+.phone:hover{transform:translateY(-8px) rotate(-.7deg)}
+.phone img{border-radius:24px;width:100%}
+.phone::before{
+  content:"";position:absolute;z-index:2;top:12px;left:50%;transform:translateX(-50%);
+  width:62px;height:5px;border-radius:99px;background:rgba(255,255,255,.14);
+}
+@media(max-width:820px){.steps{grid-template-columns:1fr;max-width:400px;margin-inline:auto}}
+
+/* ── feature blocks ─────────────────────────────────────────────────── */
+.feat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.feat.flip > *:first-child{order:2}
+.feat .copy p{margin-top:1.15rem;color:var(--ink-2)}
+.feat ul{margin:1.6rem 0 0;padding:0;list-style:none;display:grid;gap:.75rem}
+.feat li{display:flex;gap:.75rem;font-size:.97rem;color:var(--ink-2);align-items:flex-start}
+.feat li::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--accent);margin-top:.55rem;flex:none}
+@media(max-width:920px){.feat{grid-template-columns:1fr}.feat.flip > *:first-child{order:0}}
+
+/* ── cards & charts ─────────────────────────────────────────────────── */
+.card{
+  background:linear-gradient(168deg,rgba(255,255,255,.07),rgba(255,255,255,.022));
+  border:1px solid var(--line);border-radius:var(--r);padding:clamp(1.2rem,2.4vw,1.8rem);
+  box-shadow:0 40px 80px -40px rgba(0,0,0,.9);
+}
+.tag{
+  position:absolute;top:1.1rem;right:1.1rem;font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-3);border:1px solid var(--line);border-radius:99px;padding:.22rem .6rem;
+}
+.k{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+.big{font-family:var(--display);font-weight:800;letter-spacing:-.04em;font-size:clamp(2.4rem,5vw,3.4rem);line-height:1}
+.big small{font-size:.36em;font-weight:700;color:var(--ink-3);letter-spacing:0;margin-left:.35rem}
+.chartbox{position:relative;margin-top:1.4rem}
+.chartbox svg{width:100%;height:auto;display:block;overflow:visible}
+.legend{display:flex;gap:1.2rem;align-items:center;margin-top:.85rem;font-size:.78rem;color:var(--ink-3);flex-wrap:wrap}
+.legend i{display:inline-block;width:20px;height:0;border-top:2px solid currentColor;margin-right:.45rem;vertical-align:middle}
+.pill{border:1px solid var(--line);border-radius:99px;padding:.15rem .6rem;color:var(--good);font-size:.74rem;font-weight:600}
+.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-radius:14px;overflow:hidden;margin-top:1.1rem}
+.statrow div{background:var(--surface);padding:.85rem .95rem}
+.statrow .v{font-size:1.28rem;font-weight:700;margin-top:.2rem}
+.bar{display:flex;gap:3px;height:11px;border-radius:99px;overflow:hidden;margin:1.1rem 0 1rem}
+.bar i{display:block;height:100%;width:0;border-radius:2px;transition:width 1.1s cubic-bezier(.2,.8,.25,1)}
+.in .bar i{width:var(--w)}
+.brk .row{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:.7rem;padding:.42rem 0;font-size:.92rem;border-bottom:1px solid var(--line-soft)}
+.brk .row:last-child{border-bottom:0}
+.brk .pc{color:var(--ink-3);font-size:.82rem}
+.brk .am{font-variant-numeric:tabular-nums;font-weight:600}
+.saved{text-align:center;color:var(--good);font-size:.82rem;margin-top:.9rem}
+
+.pricecard .row2{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.rise{color:var(--accent-2);font-weight:700}
+.hist{margin-top:1.1rem}
+.hist .h{display:grid;grid-template-columns:auto 1fr auto;gap:.8rem;font-size:.88rem;padding:.4rem 0;border-bottom:1px solid var(--line-soft);color:var(--ink-2)}
+.hist .h:last-child{border-bottom:0}
+.hist .h b{font-variant-numeric:tabular-nums;color:var(--ink)}
+.hist .h .lab{font-size:.78rem;color:var(--ink-3)}
+
+/* ── numbers band ───────────────────────────────────────────────────── */
+.band{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.band div{background:#101010;padding:clamp(1.4rem,2.6vw,2rem)}
+.band .v{font-family:var(--display);font-weight:800;font-size:clamp(2rem,3.6vw,2.9rem);letter-spacing:-.04em;line-height:1}
+.band .l{color:var(--ink-3);font-size:.88rem;margin-top:.5rem}
+@media(max-width:860px){.band{grid-template-columns:repeat(2,1fr)}}
+
+/* ── household ──────────────────────────────────────────────────────── */
+.fam{position:relative;overflow:hidden}
+.fam .sub{
+  display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgba(249,115,22,.45);
+  background:rgba(249,115,22,.1);border-radius:999px;padding:.4rem .95rem;font-weight:700;font-size:.92rem;
+}
+.fam .sub b{font-family:var(--display);letter-spacing:-.02em}
+.members{display:flex;gap:.5rem;margin:1.5rem 0 .4rem;flex-wrap:wrap}
+.who{
+  display:flex;align-items:center;gap:.55rem;border:1px solid var(--line);border-radius:999px;
+  padding:.36rem .8rem .36rem .36rem;background:rgba(255,255,255,.03);font-size:.86rem;
+  opacity:0;transform:translateY(8px);transition:opacity .5s,transform .5s;
+}
+.in .who{opacity:1;transform:none}
+.in .who:nth-child(2){transition-delay:.1s}.in .who:nth-child(3){transition-delay:.2s}
+.in .who:nth-child(4){transition-delay:.3s}.in .who:nth-child(5){transition-delay:.4s}
+.who i{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex:none;
+  font-family:var(--display);font-style:normal;font-weight:700;font-size:.76rem;color:#0B0B0B;
+}
+.who .tiny{font-size:.7rem;color:var(--ink-3)}
+.pool{margin-top:1.6rem}
+.pool .line{display:flex;justify-content:space-between;font-size:.84rem;color:var(--ink-3);margin-bottom:.5rem}
+.pool .track{display:flex;gap:2px;height:14px;border-radius:99px;overflow:hidden;background:var(--surface-2)}
+.pool .track i{display:block;height:100%;width:0;transition:width 1.1s cubic-bezier(.2,.8,.25,1)}
+.in .pool .track i{width:var(--w)}
+.in .pool .track i:nth-child(2){transition-delay:.12s}.in .pool .track i:nth-child(3){transition-delay:.24s}
+.in .pool .track i:nth-child(4){transition-delay:.36s}.in .pool .track i:nth-child(5){transition-delay:.48s}
+.pool .foot{margin-top:.7rem;font-size:.84rem;color:var(--ink-3)}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:1.6rem}
+.vs div{background:#101010;padding:1rem 1.1rem}
+.vs .t{font-family:var(--mono);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+.vs .m{font-family:var(--display);font-weight:800;font-size:1.7rem;letter-spacing:-.03em;margin-top:.35rem}
+.vs .strike{color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(249,115,22,.8)}
+
+/* ── privacy ────────────────────────────────────────────────────────── */
+.privacy{
+  background:
+    radial-gradient(40rem 26rem at 20% 0%,rgba(52,150,239,.1),transparent 65%),
+    linear-gradient(180deg,rgba(255,255,255,.028),transparent);
+  border-block:1px solid var(--line);
+}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.6vw,2rem);margin-top:2.6rem}
+.pgrid .card{padding:1.5rem}
+.pgrid h3{font-size:1.12rem;margin-bottom:.6rem}
+.pgrid p{color:var(--ink-2);font-size:.95rem}
+.pico{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:var(--accent-wash);margin-bottom:1rem}
+.pico svg{width:18px;height:18px;stroke:var(--accent-2);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:860px){.pgrid{grid-template-columns:1fr}}
+
+/* ── pricing ────────────────────────────────────────────────────────── */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,2.5vw,1.8rem);align-items:start}
+.plan{position:relative;padding:clamp(1.6rem,3vw,2.3rem)}
+.plan.hot{
+  border-color:rgba(249,115,22,.5);
+  background:linear-gradient(168deg,rgba(249,115,22,.13),rgba(255,255,255,.02));
+  box-shadow:0 40px 90px -46px rgba(249,115,22,.65);
+}
+.plan .price{font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,4.4vw,3.2rem);letter-spacing:-.045em;margin:.7rem 0 .2rem}
+.plan .price span{font-family:var(--body);font-size:1rem;font-weight:600;color:var(--ink-3);letter-spacing:0}
+.plan ul{list-style:none;padding:0;margin:1.5rem 0 2rem;display:grid;gap:.72rem}
+.plan li{display:flex;gap:.7rem;font-size:.96rem;color:var(--ink-2);align-items:flex-start}
+.plan li svg{width:17px;height:17px;flex:none;margin-top:.24rem;stroke:var(--accent-2);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.plan.free li svg{stroke:var(--ink-3)}
+.plan .btn{width:100%;justify-content:center}
+.note{margin-top:1.6rem;font-size:.87rem;color:var(--ink-3);max-width:70ch}
+@media(max-width:820px){.plans{grid-template-columns:1fr}}
+
+/* ── faq ────────────────────────────────────────────────────────────── */
+.faq{max-width:840px;margin-inline:auto}
+details{border-bottom:1px solid var(--line);padding:1.25rem 0}
+details summary{
+  cursor:pointer;list-style:none;font-family:var(--display);font-weight:700;font-size:1.16rem;
+  letter-spacing:-.02em;display:flex;justify-content:space-between;gap:1.5rem;align-items:center;
+}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";color:var(--accent);font-family:var(--body);font-weight:600;font-size:1.5rem;transition:transform .3s;line-height:1}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink-2);margin-top:.9rem;font-size:.99rem;max-width:72ch}
+
+/* ── final cta & footer ─────────────────────────────────────────────── */
+.final{text-align:center;position:relative;overflow:clip}
+.final .glow{position:absolute;inset:auto 0 -40% 0;height:70%;background:radial-gradient(50% 100% at 50% 100%,rgba(249,115,22,.3),transparent 70%);pointer-events:none}
+.final h2{max-width:18ch;margin-inline:auto}
+.final .cta-row{justify-content:center}
+.final .lede{margin:1.6rem auto 0}
+footer{border-top:1px solid var(--line);padding:3rem 0 4rem;font-size:.92rem;color:var(--ink-3)}
+.fgrid{display:flex;flex-wrap:wrap;gap:1.6rem 2.6rem;align-items:center}
+footer a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
+footer a:hover{border-bottom-color:var(--accent)}
+.fgrid .right{margin-left:auto;display:flex;gap:1.6rem;flex-wrap:wrap}
+
+/* ── phones: the funnel's real audience ─────────────────────────────── */
+@media(max-width:620px){
+  section{padding:clamp(3.4rem,12vw,5rem) 0}
+  h1{font-size:clamp(2.9rem,12.5vw,4rem)}
+  .steps{gap:2.8rem}
+  .step .phone{max-width:248px;margin-inline:auto}
+  .head{margin-bottom:2.2rem}
+  .statrow{grid-template-columns:1fr}
+  .vs{grid-template-columns:1fr}
+  .pricecard .row2 svg{width:100%;height:auto}
+}
+
+/* ── кегли под Unbounded ──────────────────────────────────────────────── */
+h1{font-size:clamp(2.05rem,6.4vw,5rem);letter-spacing:-.045em}
+h2{font-size:clamp(1.75rem,3.9vw,3rem);letter-spacing:-.04em}
+h3{font-size:clamp(1.12rem,1.8vw,1.4rem)}
+.big{font-size:clamp(1.9rem,4vw,2.7rem)}
+.plan .price{font-size:clamp(1.9rem,3.4vw,2.5rem)}
+.band .v{font-size:clamp(1.6rem,2.9vw,2.3rem)}
+.vs .m{font-size:1.4rem}
+details summary{font-size:1.02rem}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+  .s-row{opacity:1}
+}
+</style>
+</head>
+
+<body>
+
+<header class="nav" id="nav">
+  <div class="shell">
+    <a class="brand" href="#top"><img src="/traty/assets/icon.png" alt="" width="30" height="30">Traty</a>
+    <nav class="nav-links">
+      <a href="#how">Як це працює</a>
+      <a href="#month">Ваш місяць</a>
+      <a href="#family">Сім'я</a>
+      <a href="#privacy">Приватність</a>
+      <a href="#pricing">Ціна</a>
+      <a href="#faq">Питання</a>
+    </nav>
+    <div class="langs" role="navigation" aria-label="Language">
+      <a href="/traty/" hreflang="pl">PL</a>
+      <a href="/traty/uk/" hreflang="uk" class="on">UA</a>
+    </div>
+    <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=dev.charoian.traty" rel="noopener">Завантажити</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="shell hero-grid">
+    <div>
+      <p class="eyebrow">Сканер чеків для Android</p>
+      <h1>Сфотографуй чек.<span class="em">Він розкладеться сам.</span></h1>
+      <p class="lede">Кожен рядок прочитаний, оцінений і покладений у свою категорію — назва, кількість, ціна, усе. Місяць паперу перетворюється на кілька чисел, які справді можна прочитати.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=dev.charoian.traty" rel="noopener">
+          <svg width="18" height="20" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M47 17a24 24 0 0 0-12 21v436a24 24 0 0 0 12 21l248-239L47 17zm281 207 62-60-292-141 230 201zm0 64L98 489l292-141-62-60zm94-31 63-30c17-9 17-31 0-40l-63-30-70 50 70 50z"/></svg>
+          Завантажити в Google Play
+        </a>
+        <a class="btn btn-ghost" href="#how">Подивитися, як це працює</a>
+      </div>
+      <p class="trust">
+        <span>Старт безкоштовний</span>
+        <span>Фото не зберігається</span>
+        <span>Без реклами</span>
+      </p>
+    </div>
+
+    <div class="scene" aria-hidden="true">
+      <div class="paper">
+        <div class="scanline"></div>
+        <div class="shop">КОШИК</div>
+        <div class="meta">вул. Квіткова 12 · 09.09.2026 · 11:20</div>
+        <hr>
+        <div class="p-row"><span>Курячі стегна</span><span>415,80</span></div>
+        <div class="p-sub">2 кг × 207,90</div>
+        <div class="p-row"><span>Картопля</span><span>191,95</span></div>
+        <div class="p-sub">5 кг × 38,39</div>
+        <div class="p-row"><span>Молоко 2%, 1 л</span><span>329,34</span></div>
+        <div class="p-sub">6 л × 54,89</div>
+        <div class="p-row"><span>Рис, 1 кг</span><span>197,78</span></div>
+        <div class="p-sub">2 шт × 98,89</div>
+        <div class="p-row"><span>Заморожені ягоди</span><span>327,80</span></div>
+        <div class="p-sub">2 шт × 163,90</div>
+        <div class="p-row"><span>Сік, 1 л</span><span>329,56</span></div>
+        <div class="p-sub">4 шт × 82,39</div>
+        <div class="p-row"><span>Торт</span><span>361,90</span></div>
+        <hr>
+        <div class="p-total"><span>РАЗОМ UAH</span><span>2154,13</span></div>
+      </div>
+
+      <div class="sorted">
+        <h4>Розкладено за секунду</h4>
+        <p class="cap">Прочитано з фото</p>
+        <div class="s-row" style="--d:0.50s"><i class="dot" style="background:var(--c2)"></i><b>Курячі стегна<em>М&#x27;ясо · 2 кг</em></b><span class="amt">415,80</span></div>
+        <div class="s-row" style="--d:0.85s"><i class="dot" style="background:var(--c3)"></i><b>Картопля<em>Овочі · 5 кг</em></b><span class="amt">191,95</span></div>
+        <div class="s-row" style="--d:1.20s"><i class="dot" style="background:var(--c1)"></i><b>Молоко 2%, 1 л<em>Молочне · 6 л</em></b><span class="amt">329,34</span></div>
+        <div class="s-row" style="--d:1.55s"><i class="dot" style="background:var(--c4)"></i><b>Рис, 1 кг<em>Бакалія · 2 шт</em></b><span class="amt">197,78</span></div>
+        <div class="s-row" style="--d:1.90s"><i class="dot" style="background:var(--c5)"></i><b>Заморожені ягоди<em>Заморозка · 2 шт</em></b><span class="amt">327,80</span></div>
+        <div class="s-row" style="--d:2.25s"><i class="dot" style="background:var(--c6)"></i><b>Сік, 1 л<em>Напої · 4 шт</em></b><span class="amt">329,56</span></div>
+        <div class="s-row" style="--d:2.60s"><i class="dot" style="background:var(--c2)"></i><b>Торт<em>Солодке · 1 шт</em></b><span class="amt">361,90</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MARQUEE ═══ -->
+<div class="strip" aria-hidden="true">
+  <div class="track">
+    <span>Назва, ціна, кількість, категорія</span><span>30 категорій</span><span>Історія ціни товару</span>
+    <span>Віджет на головному екрані</span><span>Спільна сім'я</span><span>English · Polski · Українська · Русский</span>
+    <span>Ручне введення завжди безкоштовне</span><span>Читає валюту з чека</span>
+    <span>Назва, ціна, кількість, категорія</span><span>30 категорій</span><span>Історія ціни товару</span>
+    <span>Віджет на головному екрані</span><span>Спільна сім'я</span><span>English · Polski · Українська · Русский</span>
+    <span>Ручне введення завжди безкоштовне</span><span>Читає валюту з чека</span>
+  </div>
+</div>
+
+<!-- ═══ HOW ═══ -->
+<section id="how">
+  <div class="shell">
+    <div class="head rv">
+      <p class="eyebrow">Три кроки, секунд десять</p>
+      <h2>Ви наводите камеру. Це вся робота.</h2>
+      <p class="lede">Жоден додаток не зробив введення чека приємним, тому Traty про це й не просить. Сфотографуйте — і список прийде вже розібраним на позиції, а будь-який рядок можна виправити.</p>
+    </div>
+
+    <div class="steps">
+      <article class="step rv" data-d="1">
+        <div class="phone"><img src="/traty/assets/uk/shoot.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Екран камери Traty, наведений на паперовий чек"></div>
+        <span class="n">01</span>
+        <h3>Сфотографуйте</h3>
+        <p>Зім’ятий, вицвілий, безглуздо довгий — просто наведіть і зніміть. Довгі чеки ріжуться на смуги і читаються частинами, і це однаково один чек.</p>
+      </article>
+      <article class="step rv" data-d="2">
+        <div class="phone"><img src="/traty/assets/uk/sorted.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнані позиції чека в Traty: назва, кількість, ціна й категорія"></div>
+        <span class="n">02</span>
+        <h3>Він читає кожен рядок</h3>
+        <p>Назва, кількість, ціна за одиницю і категорія для кожної позиції. Суму, дату й валюту телефон читає сам.</p>
+      </article>
+      <article class="step rv" data-d="3">
+        <div class="phone"><img src="/traty/assets/uk/home.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Головна Traty: сума місяця, витрата на день і розклад за категоріями"></div>
+        <span class="n">03</span>
+        <h3>Місяць складається сам</h3>
+        <p>Кожен чек лягає в одну картину місяця: сума, середнє, витрата на день і те, на що саме все пішло.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MONTH ═══ -->
+<section id="month">
+  <div class="shell feat">
+    <div class="copy rv">
+      <p class="eyebrow">На що йде місяць</p>
+      <h2>Місяць покупок у шести числах.</h2>
+      <p>Купа чеків не говорить нічого, форма — усе. Traty малює цей місяць поверх тих самих днів попереднього, тому перевитрата видно 9-го, а не 30-го.</p>
+      <ul>
+        <li>Сума наростаючим підсумком проти тих самих днів минулого місяця</li>
+        <li>Середній чек, витрата на день, зекономлене на знижках</li>
+        <li>Кожна категорія тримає свій колір, місяць за місяцем</li>
+        <li>Торкніться категорії, щоб побачити позиції всередині</li>
+      </ul>
+    </div>
+
+    <div class="card rv" data-d="2" id="dash" style="position:relative">
+      <span class="tag">Демодані</span>
+      <p class="k">Вересень</p>
+      <p class="big tabular"><span data-count="29044.40">0</span><small>UAH</small></p>
+      <p class="muted" style="font-size:.92rem">10 чеків</p>
+
+      <div class="chartbox">
+        <p class="k" style="margin-bottom:.5rem">Витрачено з початку місяця</p>
+        <svg viewBox="0 0 620 190" role="img" aria-label="Сума за вересень на 21 відсоток нижча за ті самі дні серпня">
+          <defs>
+            <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#F97316" stop-opacity=".38"/>
+              <stop offset="1" stop-color="#F97316" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <line x1="0" y1="176" x2="620" y2="176" stroke="rgba(255,255,255,.12)"/>
+          <path class="area" d="M6,172 L58,166 L110,160 L162,152 L214,146 L266,132 L318,116 L318,176 L6,176 Z" fill="url(#fill)" opacity="0"/>
+          <path class="draw dash" d="M6,168 L58,158 L110,150 L162,140 L214,128 L266,116 L318,74 L370,58 L422,46 L474,34 L526,26 L578,20"
+                fill="none" stroke="#7A7974" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round"/>
+          <path class="draw solid" d="M6,172 L58,166 L110,160 L162,152 L214,146 L266,132 L318,116"
+                fill="none" stroke="#F97316" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle class="pt" cx="318" cy="116" r="5.5" fill="#F97316" opacity="0"/>
+        </svg>
+        <div class="legend">
+          <span style="color:#F97316"><i></i><span style="color:var(--ink-2)">Вересень</span></span>
+          <span class="pill">↘ −21%</span>
+          <span style="color:#7A7974"><i style="border-top-style:dotted;border-top-width:3px"></i><span style="color:var(--ink-2)">Серпень</span></span>
+        </div>
+      </div>
+
+      <div class="statrow">
+        <div><p class="k">Середній чек</p><p class="v tabular">2904,44</p></div>
+        <div><p class="k">На день</p><p class="v tabular">2640,33</p></div>
+        <div><p class="k">Зекономлено</p><p class="v tabular">143,00</p></div>
+      </div>
+
+      <div class="bar" role="img" aria-label="Частка категорій у місяці"><i style="--w:55%;background:var(--c1)"></i><i style="--w:9%;background:var(--c2)"></i><i style="--w:6%;background:var(--c3)"></i><i style="--w:5%;background:var(--c4)"></i><i style="--w:4%;background:var(--c5)"></i><i style="--w:20%;background:var(--c6)"></i></div>
+
+      <div class="brk">
+        <div class="row"><i class="dot" style="background:var(--c1)"></i><span>Оренда і рахунки</span><span class="pc">55%</span><span class="am tabular">15950,00</span></div>
+        <div class="row"><i class="dot" style="background:var(--c2)"></i><span>Пальне</span><span class="pc">9%</span><span class="am tabular">2712,82</span></div>
+        <div class="row"><i class="dot" style="background:var(--c3)"></i><span>Послуги</span><span class="pc">6%</span><span class="am tabular">1815,00</span></div>
+        <div class="row"><i class="dot" style="background:var(--c4)"></i><span>Одяг</span><span class="pc">5%</span><span class="am tabular">1571,90</span></div>
+        <div class="row"><i class="dot" style="background:var(--c5)"></i><span>Проїзд</span><span class="pc">4%</span><span class="am tabular">1210,00</span></div>
+        <div class="row"><i class="dot" style="background:var(--c6)"></i><span>Решта · 11 категорій</span><span class="pc">20%</span><span class="am tabular">5784,68</span></div>
+      </div>
+      <p class="saved">Зекономлено на знижках 143,00 UAH</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICE HISTORY ═══ -->
+<section>
+  <div class="shell feat flip">
+    <div class="card rv pricecard" style="position:relative">
+      <span class="tag">Демодані</span>
+      <p class="k">Кошик</p>
+      <div class="row2">
+        <div>
+          <h3 style="font-family:var(--body);font-weight:600;font-size:1.05rem;margin:.3rem 0 .5rem">Молоко 2%, 1 л</h3>
+          <p class="big tabular"><span data-count="54.89">0</span><small>UAH за літр</small></p>
+          <p class="rise" style="margin-top:.5rem">11% більше ніж 02.08.2026</p>
+        </div>
+        <svg viewBox="0 0 220 90" width="220" height="90" role="img" aria-label="Ціна чотири рази трималася на 49,39 і зросла до 54,89">
+          <path class="draw spark" d="M8,66 L58,66 L108,66 L158,66 L208,24" fill="none" stroke="#FB923C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle class="pt" cx="208" cy="24" r="5" fill="#FB923C" opacity="0"/>
+        </svg>
+      </div>
+      <div class="hist">
+        <div class="h"><span class="tabular">09.09.2026</span><span class="lab">найдорожче</span><b>54,89</b></div>
+        <div class="h"><span class="tabular">02.09.2026</span><span class="lab">найдешевше</span><b>49,39</b></div>
+        <div class="h"><span class="tabular">30.08.2026</span><span class="lab">найдешевше</span><b>49,39</b></div>
+        <div class="h"><span class="tabular">09.08.2026</span><span class="lab">найдешевше</span><b>49,39</b></div>
+        <div class="h"><span class="tabular">02.08.2026</span><span class="lab">найдешевше</span><b>49,39</b></div>
+      </div>
+    </div>
+
+    <div class="copy rv" data-d="2">
+      <p class="eyebrow">Історія ціни</p>
+      <h2>Він помічає, коли ціна тихо повзе вгору.</h2>
+      <p>Те саме молоко, той самий магазин, на кілька гривень дорожче, ніж місяць тому. З пам’яті цього не зловити. Traty пам’ятає кожну ціну, яку ви платили за товар, і прямо каже, коли нова вища.</p>
+      <ul>
+        <li>Кожна покупка товару, найдешевша й найдорожча позначені</li>
+        <li>Порівняння за літр або за кілограм, а не за упаковку</li>
+        <li>Дві різні речі вважаються одним товаром? Розділіть їх одним дотиком</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EDIT + MONTHS ═══ -->
+<section>
+  <div class="shell feat">
+    <div class="copy rv">
+      <p class="eyebrow">Ваше — вам і правити</p>
+      <h2>Читає модель. Власник — ви.</h2>
+      <p>Модель час від часу помиляється на змазаному рядку, і додаток, який удає протилежне, гірший за той, що зізнається. Кожне поле лишається редагованим, а чек стежить за власною арифметикою — щойно рядки перестають складатися в надруковану суму, він про це каже.</p>
+      <ul>
+        <li>Два дотики, щоб виправити ціну або перенести позицію в іншу категорію</li>
+        <li>Немає камери? Введіть чек руками — безкоштовно, завжди, скільки завгодно</li>
+        <li>Місяць за місяцем, група за групою, аж до окремої позиції</li>
+        <li>Світла й темна тема, українською, польською, англійською та російською</li>
+      </ul>
+    </div>
+    <div class="rv" data-d="2" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2.4vw,1.8rem)">
+      <div class="phone"><img src="/traty/assets/uk/receipt.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Розпізнаний чек у Traty, рядок за рядком на аркуші, схожому на папір"></div>
+      <div class="phone" style="margin-top:2.4rem"><img src="/traty/assets/uk/expenses.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Екран витрат у Traty: місяць за місяцем, за категоріями"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NUMBERS ═══ -->
+<section style="padding-top:0">
+  <div class="shell">
+    <div class="band rv">
+      <div><p class="v tabular"><span data-count="30">0</span></p><p class="l">категорій, кожна зі своїм кольором</p></div>
+      <div><p class="v tabular"><span data-count="4">0</span></p><p class="l">мови, вбудовані</p></div>
+      <div><p class="v">0</p><p class="l">реклами, ніколи</p></div>
+      <div><p class="v">∞</p><p class="l">чеків, введених руками, безкоштовно</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WIDGET ═══ -->
+<section style="padding-top:0">
+  <div class="shell feat flip">
+    <div class="rv" style="max-width:320px;margin-inline:auto">
+      <div class="phone"><img src="/traty/assets/uk/widget.webp" width="540" height="1200" loading="lazy" decoding="async" alt="Віджет Traty на головному екрані Android із сумою місяця"></div>
+    </div>
+    <div class="copy rv" data-d="2">
+      <p class="eyebrow">Головний екран</p>
+      <h2>Сума, не відкриваючи нічого.</h2>
+      <p>Віджет із місяцем і останніми чеками. Безкоштовний на будь-якому тарифі — він малює ті самі чеки, що вже у вас є, а брати гроші за погляд на власні числа було б дивною справою.</p>
+      <ul>
+        <li>Сума місяця й останні чеки з одного погляду</li>
+        <li>Дотик веде просто до камери</li>
+        <li>Підлаштовується під світлий або темний вигляд телефона</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOUSEHOLD ═══ -->
+<section class="fam" id="family">
+  <div class="shell feat">
+    <div class="copy rv">
+      <p class="eyebrow">Один тариф, п'ятеро людей</p>
+      <h2>Сім'я купує разом. Отже, платить один раз.</h2>
+      <p>Більшість додатків продають п'ять підписок на одну родину. Traty продає одну: підписник відкриває сім'ю і запрошує до чотирьох людей, а приєднання безкоштовне, навіть якщо вони ніколи ні за що не платили.</p>
+      <ul>
+        <li>Одна спільна база чеків — хто б не купував, бачать усі</li>
+        <li>Один спільний запас розпізнавань, з тарифу підписника</li>
+        <li>У кожного свій телефон, свій вхід і своя мова</li>
+        <li>Вийдете з сім'ї — власні безкоштовні спроби лишаються вашими</li>
+      </ul>
+      <div class="cta-row" style="margin-top:2rem">
+        <a class="btn btn-primary" href="#pricing">Подивитися ціну</a>
+      </div>
+    </div>
+
+    <div class="card rv" data-d="2">
+      <span class="sub">Traty Plus · <b>149 ₴</b> / місяць</span>
+      <p class="k" style="margin-top:1.4rem">Сім&#x27;я · 5 людей</p>
+      <div class="members">
+        <span class="who"><i style="background:var(--accent)">О</i>Олег<span class="tiny">власник</span></span>
+        <span class="who"><i style="background:var(--c1)">М</i>Марта</span>
+        <span class="who"><i style="background:var(--c3)">К</i>Катя</span>
+        <span class="who"><i style="background:var(--c5)">П</i>Петро</span>
+        <span class="who"><i style="background:var(--c2)">І</i>Іван</span>
+      </div>
+
+      <div class="pool">
+        <div class="line"><span>Розпізнавань цього місяця, спільних</span><span class="tabular">63 зі 100</span></div>
+        <div class="track" role="img" aria-label="Використано 63 зі 100 місячних розпізнавань, на п&#x27;ятьох"><i style="--w:22%;background:var(--accent)"></i><i style="--w:16%;background:var(--c1)"></i><i style="--w:11%;background:var(--c3)"></i><i style="--w:8%;background:var(--c5)"></i><i style="--w:6%;background:var(--c2)"></i></div>
+        <p class="foot">Один запас, а не п&#x27;ять. Кожен бачить, скільки лишилося.</p>
+      </div>
+
+      <div class="vs">
+        <div><p class="t">П&#x27;ять підписок</p><p class="m strike">745 ₴</p></div>
+        <div><p class="t">Одна сім&#x27;я</p><p class="m">149 ₴</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRIVACY ═══ -->
+<section class="privacy" id="privacy">
+  <div class="shell">
+    <div class="head rv">
+      <p class="eyebrow">Що залишає телефон</p>
+      <h2>Чек говорить про вас багато. Ми не лишаємо з цього майже нічого.</h2>
+      <p class="lede">Версія людською мовою. Юридична — внизу сторінки, і каже те саме, лише довше.</p>
+    </div>
+    <div class="pgrid">
+      <div class="card rv" data-d="1">
+        <div class="pico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Фото не зберігається</h3>
+        <p>Воно їде, щоб його прочитали, і зникає. Нічого про вас не продається й не передається рекламодавцям, бо рекламодавців немає.</p>
+      </div>
+      <div class="card rv" data-d="2">
+        <div class="pico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
+        <h3>Телефон робить свою частину</h3>
+        <p>Суму, дату й валюту читає сам пристрій. Сервер потрібен лише для списку позицій — це єдина причина, чому фото взагалі виїжджає.</p>
+      </div>
+      <div class="card rv" data-d="3">
+        <div class="pico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7H4M20 17H4"/><circle cx="9" cy="7" r="2.6"/><circle cx="15" cy="17" r="2.6"/></svg></div>
+        <h3>Це можна вимкнути</h3>
+        <p>Вимкніть розпізнавання — решта працює далі: ручне введення, історія, категорії, віджет. Видалення акаунта й даних — це сторінка, а не листування.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICING ═══ -->
+<section id="pricing">
+  <div class="shell">
+    <div class="head rv">
+      <p class="eyebrow">Ціна</p>
+      <h2>Тут коштує рівно одна річ.</h2>
+      <p class="lede">Читання фотографії оплачується за кожен чек — саме це й купує підписка. Ваша історія, ваші правки, ваші категорії, ваш віджет коштують нам нічого і вам теж. А одна підписка покриває сім’ю з п’ятьох.</p>
+    </div>
+
+    <div class="plans">
+      <div class="card plan free rv" data-d="1">
+        <p class="k">Безкоштовно</p>
+        <p class="price">0 ₴<span> / назавжди</span></p>
+        <p class="muted" style="font-size:.95rem">Достатньо, щоб зрозуміти, чи воно вам підходить.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>5 розпізнавань чека</b> з фотографії</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Скільки завгодно чеків, введених руками</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Уся історія, правка, категорії, розклади</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Історія цін і віджет на головному екрані</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Приєднання до чужої сім&#x27;ї</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=dev.charoian.traty" rel="noopener">Почати безкоштовно</a>
+      </div>
+
+      <div class="card plan hot rv" data-d="2">
+        <p class="k" style="color:var(--accent-2)">Traty Plus</p>
+        <p class="price">149 ₴<span> / місяць</span></p>
+        <p class="muted" style="font-size:.95rem">Для родини, яка купує по паперових чеках.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>20 розпізнавань на добу, 100 на місяць</b></span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Сім&#x27;я до п&#x27;яти осіб, одна спільна база</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Одна підписка на всю родину</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Усе з безкоштовного тарифу, без змін</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Скасування в Google Play, будь-коли</span></li>
+        </ul>
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=dev.charoian.traty" rel="noopener">Встановити Traty</a>
+      </div>
+    </div>
+    <p class="note">Оплата через Google Play у вашій валюті. Сім'я ділить один запас, а не множить його — саме тому однієї підписки вистачає на п'ятьох.</p>
+  </div>
+</section>
+
+<!-- ═══ Питання ═══ -->
+<section id="faq">
+  <div class="shell">
+    <div class="head rv" style="text-align:center;margin-inline:auto">
+      <p class="eyebrow" style="justify-content:center">Питання</p>
+      <h2>Перед встановленням</h2>
+    </div>
+    <div class="faq">
+      <details class="rv" open>
+        <summary>Як Traty читає чек?</summary>
+        <p>Ви його фотографуєте. Суму, дату й валюту телефон читає сам. Список позицій читає модель на нашому сервері — це єдина причина, чому фотографія залишає пристрій. Дуже довгий чек ріжеться на смуги й читається частинами, і це однаково одне розпізнавання.</p>
+      </details>
+      <details class="rv">
+        <summary>Чи зберігається десь фото мого чека?</summary>
+        <p>Ні. Фотографія їде, щоб її прочитали, і не зберігається. Якщо ви волієте, щоб із телефона не виходило нічого, вимкніть розпізнавання в налаштуваннях: ручне введення, історія, категорії, розклади й віджет працюють так само.</p>
+      </details>
+      <details class="rv">
+        <summary>Це справді безкоштовно?</summary>
+        <p>Введення чеків руками, їх правка, уся історія, категорії, розклади, історія цін і віджет безкоштовні й без обмежень, доки ви користуєтеся додатком. Грошей коштує лише читання фотографії, тому безкоштовний тариф містить п’ять розпізнавань, а далі підписка — 149 ₴ на місяць.</p>
+      </details>
+      <details class="rv">
+        <summary>А якщо модель помилилася в рядку?</summary>
+        <p>Виправте його. Кожне поле редагується двома дотиками — назва, ціна, кількість, категорія — і додаток попереджає, коли рядки перестають складатися в надруковану суму, тож хибне число буде помічене, а не тихо вшите у ваш місяць.</p>
+      </details>
+      <details class="rv">
+        <summary>Чи може сім'я ділити одну підписку?</summary>
+        <p>Так. Підписник створює сім'ю і запрошує до чотирьох людей; приєднання безкоштовне. Усі бачать ті самі чеки й беруть з того самого місячного запасу, тому родині з п'ятьох потрібна одна підписка, а не п'ять.</p>
+      </details>
+      <details class="rv">
+        <summary>Які мови й валюти він розуміє?</summary>
+        <p>Додаток говорить українською, польською, англійською та російською, а чеки читає у валюті, надрукованій на них, тож відпускний чек не перетвориться тихо на ваші домашні гроші.</p>
+      </details>
+      <details class="rv">
+        <summary>На яких телефонах він працює?</summary>
+        <p>Android, із Google Play. Версії для iPhone поки немає.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="final">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="shell">
+    <div class="rv">
+      <p class="eyebrow" style="justify-content:center">Ваш наступний чек</p>
+      <h2>Годі збирати папір. Час читати числа.</h2>
+      <p class="lede" style="text-align:center">П’ять розпізнавань безкоштовно, без картки, без реклами. Якщо за тиждень він не заслужить місце на вашому екрані — ви нічого не втратили.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=dev.charoian.traty" rel="noopener">
+          <svg width="18" height="20" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M47 17a24 24 0 0 0-12 21v436a24 24 0 0 0 12 21l248-239L47 17zm281 207 62-60-292-141 230 201zm0 64L98 489l292-141-62-60zm94-31 63-30c17-9 17-31 0-40l-63-30-70 50 70 50z"/></svg>
+          Завантажити в Google Play
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="shell fgrid">
+    <a class="brand" href="#top" style="font-size:1.1rem"><img src="/traty/assets/icon.png" alt="" width="26" height="26" style="width:26px;height:26px">Traty</a>
+    <span>Зробив Oleksii Charoian</span>
+    <nav class="right">
+      <a href="https://scancheck-617d3.web.app/privacy.html">Політика приватності</a>
+      <a href="https://scancheck-617d3.web.app/delete-account.html">Видалити свої дані</a>
+      <a href="mailto:oleksii.charoian@gmail.com">oleksii.charoian@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DEC = ',';   // запятая у злотого и гривны, точка у евро
+
+  const nav = document.getElementById('nav');
+  const onScroll = () => { nav.dataset.stuck = window.scrollY > 8 ? '1' : '0'; };
+  addEventListener('scroll', onScroll, {passive: true});
+  onScroll();
+
+  // Count-up writes text only; the unit lives in its own <small> sibling.
+  const countUp = el => {
+    const target = parseFloat(el.dataset.count);
+    const dec = (el.dataset.count.split('.')[1] || '').length;
+    const show = v => { el.textContent = v.toFixed(dec).replace('.', DEC); };
+    if (reduce) { show(target); return; }
+    const t0 = performance.now(), dur = 1100;
+    const tick = now => {
+      const p = Math.min((now - t0) / dur, 1);
+      show(target * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  const drawPaths = root => {
+    root.querySelectorAll('.draw').forEach((p, i) => {
+      if (reduce) return;
+      const dashed = p.classList.contains('dash');
+      if (dashed) { p.style.opacity = 0; }
+      else { const len = p.getTotalLength(); p.style.strokeDasharray = len; p.style.strokeDashoffset = len; }
+      requestAnimationFrame(() => {
+        p.style.transition = 'stroke-dashoffset 1.3s cubic-bezier(.3,.8,.3,1) ' + (i * .18) + 's, opacity .9s ease ' + (i * .18) + 's';
+        p.style.strokeDashoffset = 0;
+        p.style.opacity = 1;
+      });
+    });
+    root.querySelectorAll('.pt, .area').forEach(n => {
+      n.style.transition = 'opacity .6s ease 1.2s';
+      n.style.opacity = 1;
+    });
+  };
+
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      el.classList.add('in');
+      el.querySelectorAll('[data-count]').forEach(countUp);
+      drawPaths(el);
+      obs.unobserve(el);
+    });
+  }, {rootMargin: '0px 0px -12% 0px', threshold: .15});
+
+  document.querySelectorAll('.rv, .band, #dash, .pricecard').forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>

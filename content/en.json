@@ -1,0 +1,386 @@
+{
+  "lang": "en",
+  "ogLocale": "en_US",
+  "assets": "/assets/en",
+  "play": "https://play.google.com/store/apps/details?id=dev.charoian.traty",
+  "privacyUrl": "https://scancheck-617d3.web.app/privacy.html",
+  "deleteUrl": "https://scancheck-617d3.web.app/delete-account.html",
+  "strings": {
+    "faq.a3": "Typing receipts in by hand, editing them, your whole history, categories, breakdowns, price history and the home-screen widget are free and unlimited, for as long as you use the app. Only reading a photograph costs money per receipt, so the free tier includes five readings, and a subscription is $4.99 a month after that.",
+    "faq.a1": "You photograph it. The total, the date and the currency are read on the phone itself. The list of items is read by a model on our server — that is the only reason the photograph leaves the device. A very long receipt is cut into strips and read piece by piece, and still counts as one reading.",
+    "edit.p": "A model misreads a smudged line now and then, and an app that pretends otherwise is worse than one that admits it. Every field stays editable, and the receipt keeps its own arithmetic honest — the moment the lines stop adding up to the printed total, it says so.",
+    "faq.a2": "No. The photograph is sent to be read and is not kept afterwards. If you would rather nothing left the phone at all, turn recognition off in the settings: manual entry, history, categories, breakdowns and the widget keep working exactly as before.",
+    "pricing.lede": "Reading a photograph is paid for per receipt, so that is what a subscription buys. Your history, your edits, your categories, your widget — those cost us nothing and cost you nothing. And one subscription covers a household of five.",
+    "faq.a4": "Fix it. Every field is editable in two taps — name, price, quantity, category — and the app warns you when the lines stop adding up to the printed total, so a misread number is caught rather than quietly folded into your month.",
+    "faq.a5": "Yes. A subscriber creates a household and invites up to four people; joining is free. Everyone sees the same receipts and draws on the same monthly allowance, so a family of five needs one subscription rather than five.",
+    "widget.p": "A widget with the month so far and your latest receipts. Free on every tier — it draws the receipts you already have, and charging a person for sight of their own numbers would be a strange business.",
+    "fam.p": "Most apps sell you five subscriptions for one household. Traty sells one: a subscriber opens a household and invites up to four people, and joining is free even if they have never paid for anything.",
+    "price.p": "The same milk, the same shop, a few cents dearer than last month. Nobody catches that from memory. Traty keeps every price you have paid for a product and says plainly when the new one is higher.",
+    "month.p": "A pile of receipts tells you nothing; a shape tells you everything. Traty draws this month against the same days of the last one, so overspending shows up on the 9th instead of on the 30th.",
+    "how.lede": "No app ever made typing a receipt pleasant, so Traty does not ask you to. Photograph it and the list arrives already broken into items — with everything editable if a line came out wrong.",
+    "pricing.note": "Billed through Google Play in your local currency. A household shares one allowance rather than multiplying it — which is exactly why one subscription is enough for a family of five.",
+    "faq.a6": "The app speaks English, Polish, Ukrainian and Russian, and reads receipts in the currency printed on them, so a holiday receipt does not quietly turn into your home money.",
+    "meta.description": "Photograph a paper receipt and Traty reads every line — name, price, quantity, category — then shows where your month actually goes. Free to start on Android. No typing.",
+    "priv.c3p": "Turn recognition off and the rest carries on: manual entry, history, categories, the widget. Deleting your account and your data is a page, not an email thread.",
+    "og.description": "Traty reads every line of a paper receipt — name, price, quantity, category — and turns a month of shopping into a few numbers you can read at a glance.",
+    "hero.lede": "Every line read, priced and filed into a category — name, quantity, price, the lot. A month of paper becomes a handful of numbers you can actually read.",
+    "how.s1p": "Crumpled, faded, absurdly long — point and shoot. Long receipts are cut into strips and read piece by piece, and that still counts as one receipt.",
+    "priv.c2p": "The total, the date and the currency are read on the device. Only the item list needs a server, and that is the single reason a photo ever leaves.",
+    "meta.keywords": "receipt scanner, receipt app, expense tracker, grocery spending, scan receipt, budget app android, price history, spending by category",
+    "how.s2p": "Name, quantity, unit price and a category for each item. The total, the date and the currency are read on the phone itself.",
+    "priv.c1p": "It travels to be read and is gone. Nothing about you is sold or passed to advertisers, because there are no advertisers.",
+    "final.lede": "Five readings free, no card, no ads. If it has not earned its place on your home screen in a week, nothing was lost.",
+    "how.s3p": "Every receipt lands in one picture of the month: total, average, spend per day, and exactly where it all went.",
+    "priv.lede": "The plain version. The legal one is linked at the bottom and says the same thing at greater length.",
+    "widget.alt": "The Traty widget on an Android home screen showing the month total without opening the app",
+    "edit.alt1": "A recognised receipt in Traty, line by line on a paper-like sheet, every line editable",
+    "how.s2alt": "Receipt items recognised in Traty: each line with name, quantity, price and category",
+    "how.s3alt": "Traty dashboard with the month total, spend per day and a breakdown by category",
+    "dash.chartalt": "Running total for September is 21 percent below the same days of August",
+    "meta.title": "Traty — snap a receipt, it sorts itself | Receipt scanner for Android",
+    "how.s1alt": "Traty camera screen aimed at a paper receipt, with the shutter ready",
+    "edit.li2": "No camera? Type the receipt in by hand — free, always, however many",
+    "edit.alt2": "Traty expenses screen: spending month by month, grouped by category",
+    "fam.li3": "Everyone keeps their own phone, their own login, their own language",
+    "fam.li2": "One shared allowance of readings, drawn from the subscriber's plan",
+    "price.li3": "Two different things counted as one product? Split them in a tap",
+    "fam.li1": "One shared base of receipts — whoever shopped, everybody sees it",
+    "fam.li4": "Leave the household and your own free readings are still yours",
+    "edit.li1": "Two taps to fix a price or move an item to another category",
+    "priv.h2": "A receipt says a lot about you. We keep almost none of it.",
+    "faq.a7": "Android, from Google Play. There is no iPhone version yet.",
+    "edit.li4": "Light and dark, in English, Polish, Ukrainian and Russian",
+    "month.li2": "Average receipt, spend per day, money saved on discounts",
+    "price.li1": "Every purchase of a product, cheapest and dearest marked",
+    "month.li3": "Every category keeps its own colour, month after month",
+    "edit.li3": "Month by month, group by group, down to a single item",
+    "fam.poolfoot": "One pool, not five. Everyone sees what is left of it.",
+    "tw.description": "Every item priced and sorted. Nothing typed by hand.",
+    "fam.poolalt": "63 of 100 monthly readings used, across five people",
+    "price.li2": "Compared per litre or per kilo, not per package",
+    "month.li1": "Running total against the same days last month",
+    "faq.q6": "Which languages and currencies does it handle?",
+    "plan.f3": "Full history, editing, categories, breakdowns",
+    "widget.li3": "Follows the light or dark look of your phone",
+    "widget.li1": "Month total and recent receipts at a glance",
+    "how.h2": "You point a camera. That is the whole job.",
+    "plan.p2": "A household of up to five, one shared base",
+    "month.li4": "Tap a category to see the items inside it",
+    "fam.h2": "A family shops together. So it pays once.",
+    "final.h2": "Stop filing paper. Start reading numbers.",
+    "plan.freesub": "Enough to see whether it fits your life.",
+    "plan.f4": "Price history and the home-screen widget",
+    "plan.p3": "One subscription covers the whole family",
+    "marq.6": "English · Polski · Українська · Русский",
+    "faq.q5": "Can my family share one subscription?",
+    "month.h2": "A month of shopping, in six numbers.",
+    "band.l1": "categories, each with its own colour",
+    "widget.h2": "The total, without opening anything.",
+    "plan.plussub": "For a household that shops on paper.",
+    "faq.q2": "Is my receipt photo stored anywhere?",
+    "faq.q4": "What if the model gets a line wrong?",
+    "plan.f2": "Unlimited receipts typed in by hand",
+    "price.h2": "It notices when a price creeps up.",
+    "widget.li2": "Tap straight through to the camera",
+    "marq.8": "Reads the currency on the receipt",
+    "og.title": "Snap a receipt. It sorts itself.",
+    "pricing.h2": "Only one thing here costs money.",
+    "band.l4": "receipts typed in by hand, free",
+    "plan.p5": "Cancel in Google Play, any time",
+    "marq.1": "Name, price, quantity, category",
+    "how.eyebrow": "Three steps, about ten seconds",
+    "dash.baralt": "Share of the month by category",
+    "edit.h2": "Read by a model. Owned by you.",
+    "plan.p1": "20 readings a day, 100 a month",
+    "faq.q1": "How does Traty read a receipt?",
+    "plan.f5": "Join someone else's household",
+    "plan.p4": "Everything in Free, unchanged",
+    "faq.q7": "Which phones does it run on?",
+    "hero.eyebrow": "Receipt scanner for Android",
+    "fam.poolline": "Readings this month, shared",
+    "marq.3": "Price history per product",
+    "how.s3h": "The month adds itself up",
+    "priv.c2h": "The phone does its share",
+    "foot.made": "Made by Oleksii Charoian",
+    "marq.7": "Manual entry always free",
+    "priv.eyebrow": "What leaves your phone",
+    "cta.play": "Get it on Google Play",
+    "fam.eyebrow": "One plan, five people",
+    "priv.c1h": "The photo is not kept",
+    "priv.c3h": "You can switch it off",
+    "faq.h2": "Before you install it",
+    "month.eyebrow": "Where the month goes",
+    "fam.card": "Household · 5 people",
+    "scene.title": "Sorted, in a second",
+    "scene.cap": "Read from the photo",
+    "how.s2h": "It reads every line",
+    "dash.since": "Spent since the 1st",
+    "band.l2": "languages, built in",
+    "hero.trust2": "Photo never stored",
+    "fam.vs1": "Five subscriptions",
+    "plan.f1a": "5 receipt readings",
+    "faq.q3": "Is it really free?",
+    "marq.4": "Home-screen widget",
+    "fam.cta": "See what it costs",
+    "final.eyebrow": "Your next receipt",
+    "hero.h1b": "It sorts itself.",
+    "hero.cta2": "See how it works",
+    "edit.eyebrow": "Yours to correct",
+    "foot.delete": "Delete your data",
+    "marq.5": "Shared household",
+    "hero.h1a": "Snap a receipt.",
+    "dash.avg": "Average receipt",
+    "foot.privacy": "Privacy policy",
+    "hero.trust1": "Free to start",
+    "how.s1h": "Photograph it",
+    "price.eyebrow": "Price history",
+    "fam.vs2": "One household",
+    "plan.f1b": " from a photo",
+    "marq.2": "30 categories",
+    "nav.how": "How it works",
+    "nav.cta": "Get it free",
+    "widget.eyebrow": "Home screen",
+    "nav.month": "Your month",
+    "plan.forever": " / forever",
+    "plan.freecta": "Start free",
+    "plan.plus": "Traty Plus",
+    "dash.demo": "Demo data",
+    "band.l3": "ads, ever",
+    "plan.pluscta": "Get Traty",
+    "faq.eyebrow": "Questions",
+    "price.cheapest": "cheapest",
+    "plan.month": " / month",
+    "nav.privacy": "Privacy",
+    "nav.pricing": "Pricing",
+    "dash.perday": "Per day",
+    "price.dearest": "dearest",
+    "nav.family": "Family",
+    "hero.trust3": "No ads",
+    "dash.saved": "Saved",
+    "fam.owner": "owner",
+    "plan.free": "Free",
+    "nav.faq": "FAQ"
+  },
+  "data": {
+    "currency": "EUR",
+    "decimal": ".",
+    "month": "September",
+    "prevMonth": "August",
+    "totalRaw": "660.10",
+    "receipts": "10 receipts",
+    "avg": "66.01",
+    "perDay": "60.01",
+    "saved": "3.25",
+    "savedLine": "Saved on discounts 3.25 EUR",
+    "categories": [
+      [
+        "Rent & bills",
+        "55%",
+        "362.50"
+      ],
+      [
+        "Fuel",
+        "9%",
+        "61.66"
+      ],
+      [
+        "Services",
+        "6%",
+        "41.25"
+      ],
+      [
+        "Clothing",
+        "5%",
+        "35.73"
+      ],
+      [
+        "Fares",
+        "4%",
+        "27.50"
+      ],
+      [
+        "Other · 11 categories",
+        "20%",
+        "131.47"
+      ]
+    ],
+    "paper": {
+      "shop": "GROSIK",
+      "meta": "ul. Kwiatowa 12 · 09.09.2026 · 11:20",
+      "rows": [
+        [
+          "Chicken thighs",
+          "2 kg × 4.73",
+          "9.46"
+        ],
+        [
+          "Potatoes",
+          "5 kg × 0.87",
+          "4.35"
+        ],
+        [
+          "Milk 2%, 1 l",
+          "6 l × 1.25",
+          "7.50"
+        ],
+        [
+          "Rice, 1 kg",
+          "2 pcs × 2.25",
+          "4.50"
+        ],
+        [
+          "Frozen berries",
+          "2 pcs × 3.73",
+          "7.46"
+        ],
+        [
+          "Juice, 1 l",
+          "4 pcs × 1.87",
+          "7.48"
+        ],
+        [
+          "Cake",
+          "",
+          "8.23"
+        ]
+      ],
+      "total": [
+        "TOTAL EUR",
+        "48.98"
+      ]
+    },
+    "sorted": [
+      [
+        "Chicken thighs",
+        "Meat · 2 kg",
+        "9.46",
+        1
+      ],
+      [
+        "Potatoes",
+        "Produce · 5 kg",
+        "4.35",
+        2
+      ],
+      [
+        "Milk 2%, 1 l",
+        "Dairy · 6 l",
+        "7.50",
+        0
+      ],
+      [
+        "Rice, 1 kg",
+        "Pantry · 2 pcs",
+        "4.50",
+        3
+      ],
+      [
+        "Frozen berries",
+        "Frozen · 2 pcs",
+        "7.46",
+        4
+      ],
+      [
+        "Juice, 1 l",
+        "Drinks · 4 pcs",
+        "7.48",
+        5
+      ],
+      [
+        "Cake",
+        "Sweets · 1 pc",
+        "8.23",
+        1
+      ]
+    ],
+    "price": {
+      "shop": "Grosik",
+      "item": "Milk 2%, 1 l",
+      "raw": "1.25",
+      "unit": "EUR per litre",
+      "rise": "12% more than 02.08.2026",
+      "alt": "The price held at 1.12 four times and then rose to 1.25",
+      "rows": [
+        [
+          "09.09.2026",
+          "top",
+          "1.25"
+        ],
+        [
+          "02.09.2026",
+          "low",
+          "1.12"
+        ],
+        [
+          "30.08.2026",
+          "low",
+          "1.12"
+        ],
+        [
+          "09.08.2026",
+          "low",
+          "1.12"
+        ],
+        [
+          "02.08.2026",
+          "low",
+          "1.12"
+        ]
+      ]
+    },
+    "family": {
+      "members": [
+        [
+          "Alex",
+          0
+        ],
+        [
+          "Marta",
+          0
+        ],
+        [
+          "Kasia",
+          2
+        ],
+        [
+          "Piotr",
+          4
+        ],
+        [
+          "Jan",
+          1
+        ]
+      ],
+      "used": "63 of 100",
+      "share": [
+        [
+          "22%",
+          0
+        ],
+        [
+          "16%",
+          0
+        ],
+        [
+          "11%",
+          2
+        ],
+        [
+          "8%",
+          4
+        ],
+        [
+          "6%",
+          1
+        ]
+      ]
+    },
+    "plan": {
+      "zero": "$0",
+      "plus": "$4.99",
+      "fiveTimes": "$24.95",
+      "currency": "USD",
+      "plusAmount": "4.99"
+    }
+  }
+}
