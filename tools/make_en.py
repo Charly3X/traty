@@ -38,6 +38,20 @@ CATEGORIES = [
 ]
 
 OVERRIDES = {
+    # Не «у каждой свой цвет»: цветов шестнадцать на тридцать категорий, слоты
+    # повторяются между группами, редкие берут нейтральный (`app_colors.dart`).
+    'band.l1': 'categories it sorts your items into',
+    # Замерено на съёмке 17.09.2026: от снимка до разобранного списка около
+    # двадцати пяти секунд, а не десять.
+    'how.eyebrow': 'Three steps, about half a minute',
+    'how.s1p': 'Crumpled, faded, absurdly long — point and shoot. Long receipts are cut into strips and read piece by piece, and that still counts as one reading.',
+    # Виджет следует теме приложения, а не системы (`WidgetTheme.app`).
+    'widget.li3': 'Follows the app’s light or dark look',
+    # Без утверждений о чужих приложениях: проверить их мы не можем.
+    'fam.p': 'One subscription, not five. A subscriber opens a household and invites up to four people, and joining is free even if they have never paid for anything.',
+    'month.p': 'A pile of receipts tells you nothing; a shape tells you everything. Traty draws this month against the same days of the last one, so overspending shows up in the first week instead of on the 30th.',
+    'plan.f5': 'Join someone else’s household',
+    'fam.li2': 'One shared allowance of readings, drawn from the subscriber’s plan',
     'price.p': 'The same milk, the same shop, a few cents dearer than last month. Nobody catches that from memory. Traty keeps every price you have paid for a product and says plainly when the new one is higher.',
     'faq.a3': 'Typing receipts in by hand, editing them, your whole history, categories, breakdowns, price history and the home-screen widget are free and unlimited, for as long as you use the app. Only reading a photograph costs money per receipt, so the free tier includes five readings, and a subscription is $4.99 a month after that.',
     'dash.chartalt': 'Running total for September is 11 percent below the same days of August',

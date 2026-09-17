@@ -92,7 +92,7 @@
           "name": "Czy moje zdjęcie paragonu gdzieś zostaje?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nie. Zdjęcie jedzie, żeby je odczytać, i nie jest przechowywane. Jeśli wolisz, żeby nic nie opuszczało telefonu, wyłącz rozpoznawanie w ustawieniach: wpisywanie ręczne, historia, kategorie, podziały i widżet działają dokładnie tak samo."
+            "text": "Nie. Zdjęcie trafia na serwer tylko po to, żeby je odczytać, i nie jest przechowywane. Jeśli wolisz, żeby nic nie opuszczało telefonu, wyłącz rozpoznawanie w ustawieniach: wpisywanie ręczne, historia, kategorie, zestawienia i widżet działają dokładnie tak samo."
           }
         },
         {
@@ -100,7 +100,7 @@
           "name": "Czy to naprawdę za darmo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Wpisywanie paragonów ręcznie, ich edycja, cała historia, kategorie, podziały, historia cen i widżet są darmowe i bez limitu, tak długo, jak używasz aplikacji. Płatny jest tylko odczyt zdjęcia, bo każdy kosztuje — dlatego plan darmowy zawiera pięć odczytów, a potem subskrypcja to 19,99 zł miesięcznie."
+            "text": "Wpisywanie paragonów ręcznie, ich edycja, cała historia, kategorie, zestawienia, historia cen i widżet są darmowe i bez limitu, tak długo, jak używasz aplikacji. Płatny jest tylko odczyt zdjęcia, bo każdy kosztuje — dlatego plan darmowy zawiera pięć odczytów, a potem subskrypcja to 19,99 zł miesięcznie."
           }
         },
         {
@@ -108,7 +108,7 @@
           "name": "A jeśli model źle odczyta pozycję?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Popraw ją. Każde pole zmienia się dwoma dotknięciami — nazwa, cena, ilość, kategoria — a aplikacja ostrzega, kiedy pozycje przestają się sumować do wydrukowanej sumy, więc źle odczytana liczba zostaje złapana, a nie po cichu wliczona w miesiąc."
+            "text": "Popraw ją. Każde pole poprawisz dwoma dotknięciami — nazwa, cena, ilość, kategoria — a aplikacja ostrzega, kiedy pozycje przestają się sumować do wydrukowanej sumy, więc źle odczytana liczba zostaje złapana, a nie po cichu wliczona w miesiąc."
           }
         },
         {
@@ -270,7 +270,7 @@ p{margin:0}
 .nav-links{display:flex;gap:1.9rem;margin-left:auto;font-size:.94rem;font-weight:500}
 .nav-links a{color:var(--ink-2);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
-@media(max-width:860px){.nav-links{display:none}.nav .shell{gap:1rem}}
+@media(max-width:980px){.nav-links{display:none}.nav .shell{gap:1rem}}
 
 /* ── buttons ────────────────────────────────────────────────────────── */
 .btn{
@@ -607,7 +607,7 @@ footer a:hover{border-bottom-color:var(--accent)}
   <div class="shell hero-grid">
     <div>
       <p class="eyebrow">Skaner paragonów na Androida</p>
-      <h1>Zrób zdjęcie.<span class="em">Sam się poukłada.</span></h1>
+      <h1>Sfotografuj paragon.<span class="em">Sam się poukłada.</span></h1>
       <p class="lede">Każda pozycja odczytana, wyceniona i przypisana do kategorii — nazwa, ilość, cena, wszystko. Miesiąc papierków zamienia się w kilka liczb, które naprawdę da się przeczytać.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=dev.charoian.traty" rel="noopener">
@@ -677,9 +677,9 @@ footer a:hover{border-bottom-color:var(--accent)}
 <section id="how">
   <div class="shell">
     <div class="head rv">
-      <p class="eyebrow">Trzy kroki, jakieś dziesięć sekund</p>
+      <p class="eyebrow">Trzy kroki, jakieś pół minuty</p>
       <h2>Celujesz aparatem. To cała robota.</h2>
-      <p class="lede">Żadna aplikacja nie sprawiła, że wpisywanie paragonu jest przyjemne, więc Traty o to nie prosi. Zrób zdjęcie, a lista przyjdzie już rozbita na pozycje — i każdą można poprawić, jeśli coś odczytało się źle.</p>
+      <p class="lede">Żadna aplikacja nie sprawiła, by wpisywanie paragonu było przyjemne, więc Traty o to nie prosi. Zrób zdjęcie, a lista przyjdzie już rozbita na pozycje — i każdą można poprawić, jeśli coś odczytało się źle.</p>
     </div>
 
     <div class="steps">
@@ -687,7 +687,7 @@ footer a:hover{border-bottom-color:var(--accent)}
         <div class="phone"><span class="win"><img src="/traty/assets/pl/shoot.webp" style="--focus:34%" width="540" height="1200" loading="lazy" decoding="async" alt="Ekran aparatu w Traty wycelowany w papierowy paragon"></span></div>
         <span class="n">01</span>
         <h3>Zrób zdjęcie</h3>
-        <p>Zmięty, wyblakły, absurdalnie długi — po prostu celuj i rób. Długie paragony są cięte na pasy i czytane po kawałku, a i tak liczą się jako jeden.</p>
+        <p>Zmięty, wyblakły, absurdalnie długi — po prostu wyceluj i zrób zdjęcie. Długie paragony są cięte na pasy i czytane po kawałku, a i tak liczą się jako jeden odczyt.</p>
       </article>
       <article class="step rv" data-d="2">
         <div class="phone"><span class="win"><img src="/traty/assets/pl/sorted.webp" style="--focus:30%" width="540" height="1200" loading="lazy" decoding="async" alt="Rozpoznane pozycje paragonu w Traty: nazwa, ilość, cena i kategoria"></span></div>
@@ -711,7 +711,7 @@ footer a:hover{border-bottom-color:var(--accent)}
     <div class="copy rv">
       <p class="eyebrow">Na co idzie miesiąc</p>
       <h2>Miesiąc zakupów w sześciu liczbach.</h2>
-      <p>Sterta paragonów nie mówi nic, kształt mówi wszystko. Traty rysuje ten miesiąc na tle tych samych dni poprzedniego, więc przekroczenie widać 9-go, a nie 30-go.</p>
+      <p>Sterta paragonów nie mówi nic, kształt mówi wszystko. Traty rysuje ten miesiąc na tle tych samych dni poprzedniego, więc przekroczenie widać w pierwszym tygodniu, a nie 30.</p>
       <ul>
         <li>Suma narastająco na tle tych samych dni poprzedniego miesiąca</li>
         <li>Średni paragon, wydatek na dzień, pieniądze zaoszczędzone na promocjach</li>
@@ -800,7 +800,7 @@ footer a:hover{border-bottom-color:var(--accent)}
     <div class="copy rv" data-d="2">
       <p class="eyebrow">Historia ceny</p>
       <h2>Zauważa, kiedy cena po cichu rośnie.</h2>
-      <p>To samo mleko, ten sam sklep, pięćdziesiąt groszy drożej niż miesiąc temu. Nikt tego nie wyłapie z pamięci. Traty pamięta każdą cenę, jaką zapłaciłeś za produkt, i mówi wprost, kiedy nowa jest wyższa.</p>
+      <p>To samo mleko, ten sam sklep, pięćdziesiąt groszy drożej niż miesiąc temu. Nikt tego nie wyłapie z pamięci. Traty pamięta każdą cenę zapłaconą za produkt i mówi wprost, kiedy nowa jest wyższa.</p>
       <ul>
         <li>Każdy zakup produktu, najtańszy i najdroższy oznaczone</li>
         <li>Porównanie za litr albo za kilogram, nie za opakowanie</li>
@@ -816,7 +816,7 @@ footer a:hover{border-bottom-color:var(--accent)}
     <div class="copy rv">
       <p class="eyebrow">Twoje do poprawienia</p>
       <h2>Czyta model. Właścicielem jesteś ty.</h2>
-      <p>Model czasem źle odczyta rozmazaną linijkę, a aplikacja, która udaje, że tak nie jest, jest gorsza od tej, która się do tego przyznaje. Każde pole zostaje do edycji, a paragon pilnuje własnej arytmetyki — w chwili, gdy pozycje przestają się sumować do wydrukowanej sumy, mówi o tym.</p>
+      <p>Model czasem źle odczyta rozmazany wiersz, a aplikacja, która udaje, że tak nie jest, jest gorsza od tej, która się do tego przyznaje. Każde pole zostaje do edycji, a paragon pilnuje własnej arytmetyki — w chwili, gdy pozycje przestają się sumować do wydrukowanej sumy, mówi o tym.</p>
       <ul>
         <li>Dwa dotknięcia, żeby poprawić cenę albo przenieść pozycję do innej kategorii</li>
         <li>Nie masz aparatu? Wpisz paragon ręcznie — za darmo, zawsze, ile chcesz</li>
@@ -835,8 +835,8 @@ footer a:hover{border-bottom-color:var(--accent)}
 <section style="padding-top:0">
   <div class="shell">
     <div class="band rv">
-      <div><p class="v tabular"><span data-count="30">0</span></p><p class="l">kategorii, każda w swoim kolorze</p></div>
-      <div><p class="v tabular"><span data-count="4">0</span></p><p class="l">języki, wbudowane</p></div>
+      <div><p class="v tabular"><span data-count="30">0</span></p><p class="l">kategorii, do których trafiają zakupy</p></div>
+      <div><p class="v tabular"><span data-count="4">0</span></p><p class="l">wbudowane języki</p></div>
       <div><p class="v">0</p><p class="l">reklam, nigdy</p></div>
       <div><p class="v">∞</p><p class="l">paragonów wpisanych ręcznie, za darmo</p></div>
     </div>
@@ -852,11 +852,11 @@ footer a:hover{border-bottom-color:var(--accent)}
     <div class="copy rv" data-d="2">
       <p class="eyebrow">Ekran główny</p>
       <h2>Suma, bez otwierania czegokolwiek.</h2>
-      <p>Widżet z miesiącem i ostatnimi paragonami. Za darmo na każdym planie — rysuje paragony, które już masz, a kazanie komuś płacić za widok własnych liczb byłoby dziwnym interesem.</p>
+      <p>Widżet z miesiącem i ostatnimi paragonami. Za darmo na każdym planie — rysuje paragony, które już masz, a branie pieniędzy za podgląd własnych liczb byłoby dziwnym interesem.</p>
       <ul>
         <li>Suma miesiąca i ostatnie paragony na pierwszy rzut oka</li>
         <li>Dotknięcie prowadzi prosto do aparatu</li>
-        <li>Dopasowuje się do jasnego albo ciemnego wyglądu telefonu</li>
+        <li>Dopasowuje się do jasnego albo ciemnego wyglądu aplikacji</li>
       </ul>
     </div>
   </div>
@@ -868,9 +868,9 @@ footer a:hover{border-bottom-color:var(--accent)}
     <div class="copy rv">
       <p class="eyebrow">Jeden plan, pięć osób</p>
       <h2>Rodzina robi zakupy razem. Więc płaci raz.</h2>
-      <p>Większość aplikacji sprzedaje pięć subskrypcji na jeden dom. Traty sprzedaje jedną: subskrybent zakłada rodzinę i zaprasza do czterech osób, a dołączenie jest darmowe, nawet jeśli nigdy za nic nie zapłaciły.</p>
+      <p>Jedna subskrypcja zamiast pięciu: subskrybent zakłada rodzinę i zaprasza do czterech osób, a dołączenie jest darmowe, nawet jeśli nigdy za nic nie zapłaciły.</p>
       <ul>
-        <li>Jedna wspólna baza paragonów — kto by nie kupował, widzą wszyscy</li>
+        <li>Jedna wspólna baza paragonów — kto by nie robił zakupów, widzą wszyscy</li>
         <li>Jedna wspólna pula odczytów, z planu subskrybenta</li>
         <li>Każdy ma swój telefon, swoje konto i swój język</li>
         <li>Wyjdziesz z rodziny — twoje własne darmowe odczyty zostają twoje</li>
@@ -917,12 +917,12 @@ footer a:hover{border-bottom-color:var(--accent)}
       <div class="card rv" data-d="1">
         <div class="pico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <h3>Zdjęcie nie zostaje</h3>
-        <p>Jedzie, żeby je odczytać, i znika. Nic o tobie nie jest sprzedawane ani przekazywane reklamodawcom, bo żadnych reklamodawców nie ma.</p>
+        <p>Trafia na serwer tylko po to, żeby je odczytać, i znika. Nic o tobie nie jest sprzedawane ani przekazywane reklamodawcom, bo żadnych reklamodawców nie ma.</p>
       </div>
       <div class="card rv" data-d="2">
         <div class="pico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
         <h3>Telefon robi swoje</h3>
-        <p>Sumę, datę i walutę odczytuje urządzenie. Serwera potrzebuje tylko lista pozycji i to jedyny powód, dla którego zdjęcie w ogóle wyjeżdża.</p>
+        <p>Sumę, datę i walutę odczytuje urządzenie. Serwera potrzebuje tylko lista pozycji i to jedyny powód, dla którego zdjęcie w ogóle opuszcza telefon.</p>
       </div>
       <div class="card rv" data-d="3">
         <div class="pico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7H4M20 17H4"/><circle cx="9" cy="7" r="2.6"/><circle cx="15" cy="17" r="2.6"/></svg></div>
@@ -950,7 +950,7 @@ footer a:hover{border-bottom-color:var(--accent)}
         <ul>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>5 odczytów paragonu</b> ze zdjęcia</span></li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Bez limitu paragonów wpisanych ręcznie</span></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Pełna historia, edycja, kategorie, podziały</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Pełna historia, edycja, kategorie, zestawienia</span></li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Historia cen i widżet na ekranie głównym</span></li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Dołączenie do cudzej rodziny</span></li>
         </ul>
@@ -960,7 +960,7 @@ footer a:hover{border-bottom-color:var(--accent)}
       <div class="card plan hot rv" data-d="2">
         <p class="k" style="color:var(--accent-2)">Traty Plus</p>
         <p class="price">19,99 zł<span> / miesiąc</span></p>
-        <p class="muted" style="font-size:.95rem">Dla domu, który robi zakupy na papierze.</p>
+        <p class="muted" style="font-size:.95rem">Dla rodziny, która zbiera paragony.</p>
         <ul>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>20 odczytów dziennie, 100 miesięcznie</b></span></li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Rodzina do pięciu osób, jedna wspólna baza</span></li>
@@ -989,15 +989,15 @@ footer a:hover{border-bottom-color:var(--accent)}
       </details>
       <details class="rv">
         <summary>Czy moje zdjęcie paragonu gdzieś zostaje?</summary>
-        <p>Nie. Zdjęcie jedzie, żeby je odczytać, i nie jest przechowywane. Jeśli wolisz, żeby nic nie opuszczało telefonu, wyłącz rozpoznawanie w ustawieniach: wpisywanie ręczne, historia, kategorie, podziały i widżet działają dokładnie tak samo.</p>
+        <p>Nie. Zdjęcie trafia na serwer tylko po to, żeby je odczytać, i nie jest przechowywane. Jeśli wolisz, żeby nic nie opuszczało telefonu, wyłącz rozpoznawanie w ustawieniach: wpisywanie ręczne, historia, kategorie, zestawienia i widżet działają dokładnie tak samo.</p>
       </details>
       <details class="rv">
         <summary>Czy to naprawdę za darmo?</summary>
-        <p>Wpisywanie paragonów ręcznie, ich edycja, cała historia, kategorie, podziały, historia cen i widżet są darmowe i bez limitu, tak długo, jak używasz aplikacji. Płatny jest tylko odczyt zdjęcia, bo każdy kosztuje — dlatego plan darmowy zawiera pięć odczytów, a potem subskrypcja to 19,99 zł miesięcznie.</p>
+        <p>Wpisywanie paragonów ręcznie, ich edycja, cała historia, kategorie, zestawienia, historia cen i widżet są darmowe i bez limitu, tak długo, jak używasz aplikacji. Płatny jest tylko odczyt zdjęcia, bo każdy kosztuje — dlatego plan darmowy zawiera pięć odczytów, a potem subskrypcja to 19,99 zł miesięcznie.</p>
       </details>
       <details class="rv">
         <summary>A jeśli model źle odczyta pozycję?</summary>
-        <p>Popraw ją. Każde pole zmienia się dwoma dotknięciami — nazwa, cena, ilość, kategoria — a aplikacja ostrzega, kiedy pozycje przestają się sumować do wydrukowanej sumy, więc źle odczytana liczba zostaje złapana, a nie po cichu wliczona w miesiąc.</p>
+        <p>Popraw ją. Każde pole poprawisz dwoma dotknięciami — nazwa, cena, ilość, kategoria — a aplikacja ostrzega, kiedy pozycje przestają się sumować do wydrukowanej sumy, więc źle odczytana liczba zostaje złapana, a nie po cichu wliczona w miesiąc.</p>
       </details>
       <details class="rv">
         <summary>Czy rodzina może dzielić jedną subskrypcję?</summary>
@@ -1038,7 +1038,7 @@ footer a:hover{border-bottom-color:var(--accent)}
 <footer>
   <div class="shell fgrid">
     <a class="brand" href="#top" style="font-size:1.1rem"><img src="/traty/assets/icon.png" alt="" width="26" height="26" style="width:26px;height:26px">Traty</a>
-    <span>Zrobił Oleksii Charoian</span>
+    <span>Autor: Oleksii Charoian</span>
     <nav class="right">
       <a href="https://scancheck-617d3.web.app/privacy.html">Polityka prywatności</a>
       <a href="https://scancheck-617d3.web.app/delete-account.html">Usuń swoje dane</a>

@@ -51,7 +51,7 @@ FONTS = {
         # Unbounded заметно шире Bricolage, а украинские слова длиннее
         # английских: на прежних кеглях заголовок не помещался в 375 px.
         'fontTweak': '''/* ── кегли под Unbounded ──────────────────────────────────────────────── */
-h1{font-size:clamp(2.1rem,4.3vw,3.7rem);letter-spacing:-.045em}
+h1{font-size:clamp(2.1rem,4vw,3.3rem);letter-spacing:-.045em}
 @media(max-width:620px){h1{font-size:clamp(2rem,8.4vw,2.9rem)}}
 h2{font-size:clamp(1.75rem,3.9vw,3rem);letter-spacing:-.04em}
 @media(max-width:360px){h2{font-size:clamp(1.45rem,7vw,1.75rem)}}

@@ -39,7 +39,7 @@ PL = {
     'nav.cta': 'Pobierz za darmo',
 
     'hero.eyebrow': 'Skaner paragonów na Androida',
-    'hero.h1a': 'Zrób zdjęcie.',
+    'hero.h1a': 'Sfotografuj paragon.',
     'hero.h1b': 'Sam się poukłada.',
     'hero.lede': 'Każda pozycja odczytana, wyceniona i przypisana do kategorii — nazwa, ilość, cena, wszystko. Miesiąc papierków zamienia się w kilka liczb, które naprawdę da się przeczytać.',
     'cta.play': 'Pobierz z Google Play',
@@ -50,11 +50,11 @@ PL = {
     'scene.title': 'Poukładane w sekundę',
     'scene.cap': 'Odczytane ze zdjęcia',
 
-    'how.eyebrow': 'Trzy kroki, jakieś dziesięć sekund',
+    'how.eyebrow': 'Trzy kroki, jakieś pół minuty',
     'how.h2': 'Celujesz aparatem. To cała robota.',
-    'how.lede': 'Żadna aplikacja nie sprawiła, że wpisywanie paragonu jest przyjemne, więc Traty o to nie prosi. Zrób zdjęcie, a lista przyjdzie już rozbita na pozycje — i każdą można poprawić, jeśli coś odczytało się źle.',
+    'how.lede': 'Żadna aplikacja nie sprawiła, by wpisywanie paragonu było przyjemne, więc Traty o to nie prosi. Zrób zdjęcie, a lista przyjdzie już rozbita na pozycje — i każdą można poprawić, jeśli coś odczytało się źle.',
     'how.s1h': 'Zrób zdjęcie',
-    'how.s1p': 'Zmięty, wyblakły, absurdalnie długi — po prostu celuj i rób. Długie paragony są cięte na pasy i czytane po kawałku, a i tak liczą się jako jeden.',
+    'how.s1p': 'Zmięty, wyblakły, absurdalnie długi — po prostu wyceluj i zrób zdjęcie. Długie paragony są cięte na pasy i czytane po kawałku, a i tak liczą się jako jeden odczyt.',
     'how.s1alt': 'Ekran aparatu w Traty wycelowany w papierowy paragon',
     'how.s2h': 'Czyta każdą pozycję',
     'how.s2p': 'Nazwa, ilość, cena jednostkowa i kategoria dla każdej pozycji. Sumę, datę i walutę telefon odczytuje sam.',
@@ -65,7 +65,7 @@ PL = {
 
     'month.eyebrow': 'Na co idzie miesiąc',
     'month.h2': 'Miesiąc zakupów w sześciu liczbach.',
-    'month.p': 'Sterta paragonów nie mówi nic, kształt mówi wszystko. Traty rysuje ten miesiąc na tle tych samych dni poprzedniego, więc przekroczenie widać 9-go, a nie 30-go.',
+    'month.p': 'Sterta paragonów nie mówi nic, kształt mówi wszystko. Traty rysuje ten miesiąc na tle tych samych dni poprzedniego, więc przekroczenie widać w pierwszym tygodniu, a nie 30.',
     'month.li1': 'Suma narastająco na tle tych samych dni poprzedniego miesiąca',
     'month.li2': 'Średni paragon, wydatek na dzień, pieniądze zaoszczędzone na promocjach',
     'month.li3': 'Każda kategoria trzyma swój kolor, miesiąc po miesiącu',
@@ -80,7 +80,7 @@ PL = {
 
     'price.eyebrow': 'Historia ceny',
     'price.h2': 'Zauważa, kiedy cena po cichu rośnie.',
-    'price.p': 'To samo mleko, ten sam sklep, pięćdziesiąt groszy drożej niż miesiąc temu. Nikt tego nie wyłapie z pamięci. Traty pamięta każdą cenę, jaką zapłaciłeś za produkt, i mówi wprost, kiedy nowa jest wyższa.',
+    'price.p': 'To samo mleko, ten sam sklep, pięćdziesiąt groszy drożej niż miesiąc temu. Nikt tego nie wyłapie z pamięci. Traty pamięta każdą cenę zapłaconą za produkt i mówi wprost, kiedy nowa jest wyższa.',
     'price.li1': 'Każdy zakup produktu, najtańszy i najdroższy oznaczone',
     'price.li2': 'Porównanie za litr albo za kilogram, nie za opakowanie',
     'price.li3': 'Dwie różne rzeczy liczone jako jeden produkt? Rozdziel je jednym dotknięciem',
@@ -89,7 +89,7 @@ PL = {
 
     'edit.eyebrow': 'Twoje do poprawienia',
     'edit.h2': 'Czyta model. Właścicielem jesteś ty.',
-    'edit.p': 'Model czasem źle odczyta rozmazaną linijkę, a aplikacja, która udaje, że tak nie jest, jest gorsza od tej, która się do tego przyznaje. Każde pole zostaje do edycji, a paragon pilnuje własnej arytmetyki — w chwili, gdy pozycje przestają się sumować do wydrukowanej sumy, mówi o tym.',
+    'edit.p': 'Model czasem źle odczyta rozmazany wiersz, a aplikacja, która udaje, że tak nie jest, jest gorsza od tej, która się do tego przyznaje. Każde pole zostaje do edycji, a paragon pilnuje własnej arytmetyki — w chwili, gdy pozycje przestają się sumować do wydrukowanej sumy, mówi o tym.',
     'edit.li1': 'Dwa dotknięcia, żeby poprawić cenę albo przenieść pozycję do innej kategorii',
     'edit.li2': 'Nie masz aparatu? Wpisz paragon ręcznie — za darmo, zawsze, ile chcesz',
     'edit.li3': 'Miesiąc po miesiącu, grupa po grupie, aż do pojedynczej pozycji',
@@ -97,23 +97,23 @@ PL = {
     'edit.alt1': 'Rozpoznany paragon w Traty, pozycja po pozycji na arkuszu przypominającym papier',
     'edit.alt2': 'Ekran wydatków w Traty: miesiąc po miesiącu, w podziale na kategorie',
 
-    'band.l1': 'kategorii, każda w swoim kolorze',
-    'band.l2': 'języki, wbudowane',
+    'band.l1': 'kategorii, do których trafiają zakupy',
+    'band.l2': 'wbudowane języki',
     'band.l3': 'reklam, nigdy',
     'band.l4': 'paragonów wpisanych ręcznie, za darmo',
 
     'widget.eyebrow': 'Ekran główny',
     'widget.h2': 'Suma, bez otwierania czegokolwiek.',
-    'widget.p': 'Widżet z miesiącem i ostatnimi paragonami. Za darmo na każdym planie — rysuje paragony, które już masz, a kazanie komuś płacić za widok własnych liczb byłoby dziwnym interesem.',
+    'widget.p': 'Widżet z miesiącem i ostatnimi paragonami. Za darmo na każdym planie — rysuje paragony, które już masz, a branie pieniędzy za podgląd własnych liczb byłoby dziwnym interesem.',
     'widget.li1': 'Suma miesiąca i ostatnie paragony na pierwszy rzut oka',
     'widget.li2': 'Dotknięcie prowadzi prosto do aparatu',
-    'widget.li3': 'Dopasowuje się do jasnego albo ciemnego wyglądu telefonu',
+    'widget.li3': 'Dopasowuje się do jasnego albo ciemnego wyglądu aplikacji',
     'widget.alt': 'Widżet Traty na ekranie głównym Androida z sumą miesiąca',
 
     'fam.eyebrow': 'Jeden plan, pięć osób',
     'fam.h2': 'Rodzina robi zakupy razem. Więc płaci raz.',
-    'fam.p': 'Większość aplikacji sprzedaje pięć subskrypcji na jeden dom. Traty sprzedaje jedną: subskrybent zakłada rodzinę i zaprasza do czterech osób, a dołączenie jest darmowe, nawet jeśli nigdy za nic nie zapłaciły.',
-    'fam.li1': 'Jedna wspólna baza paragonów — kto by nie kupował, widzą wszyscy',
+    'fam.p': 'Jedna subskrypcja zamiast pięciu: subskrybent zakłada rodzinę i zaprasza do czterech osób, a dołączenie jest darmowe, nawet jeśli nigdy za nic nie zapłaciły.',
+    'fam.li1': 'Jedna wspólna baza paragonów — kto by nie robił zakupów, widzą wszyscy',
     'fam.li2': 'Jedna wspólna pula odczytów, z planu subskrybenta',
     'fam.li3': 'Każdy ma swój telefon, swoje konto i swój język',
     'fam.li4': 'Wyjdziesz z rodziny — twoje własne darmowe odczyty zostają twoje',
@@ -130,9 +130,9 @@ PL = {
     'priv.h2': 'Paragon mówi o tobie sporo. My nie zostawiamy z tego prawie nic.',
     'priv.lede': 'Wersja po ludzku. Prawna jest na dole strony i mówi to samo, tylko dłużej.',
     'priv.c1h': 'Zdjęcie nie zostaje',
-    'priv.c1p': 'Jedzie, żeby je odczytać, i znika. Nic o tobie nie jest sprzedawane ani przekazywane reklamodawcom, bo żadnych reklamodawców nie ma.',
+    'priv.c1p': 'Trafia na serwer tylko po to, żeby je odczytać, i znika. Nic o tobie nie jest sprzedawane ani przekazywane reklamodawcom, bo żadnych reklamodawców nie ma.',
     'priv.c2h': 'Telefon robi swoje',
-    'priv.c2p': 'Sumę, datę i walutę odczytuje urządzenie. Serwera potrzebuje tylko lista pozycji i to jedyny powód, dla którego zdjęcie w ogóle wyjeżdża.',
+    'priv.c2p': 'Sumę, datę i walutę odczytuje urządzenie. Serwera potrzebuje tylko lista pozycji i to jedyny powód, dla którego zdjęcie w ogóle opuszcza telefon.',
     'priv.c3h': 'Możesz to wyłączyć',
     'priv.c3p': 'Wyłącz rozpoznawanie, a reszta działa dalej: wpisywanie ręczne, historia, kategorie, widżet. Usunięcie konta i danych to strona, a nie wymiana maili.',
 
@@ -144,13 +144,13 @@ PL = {
     'plan.f1a': '5 odczytów paragonu',
     'plan.f1b': ' ze zdjęcia',
     'plan.f2': 'Bez limitu paragonów wpisanych ręcznie',
-    'plan.f3': 'Pełna historia, edycja, kategorie, podziały',
+    'plan.f3': 'Pełna historia, edycja, kategorie, zestawienia',
     'plan.f4': 'Historia cen i widżet na ekranie głównym',
     'plan.f5': 'Dołączenie do cudzej rodziny',
     'plan.freecta': 'Zacznij za darmo',
     'plan.plus': 'Traty Plus',
     'plan.month': ' / miesiąc',
-    'plan.plussub': 'Dla domu, który robi zakupy na papierze.',
+    'plan.plussub': 'Dla rodziny, która zbiera paragony.',
     'plan.p1': '20 odczytów dziennie, 100 miesięcznie',
     'plan.p2': 'Rodzina do pięciu osób, jedna wspólna baza',
     'plan.p3': 'Jedna subskrypcja obejmuje całą rodzinę',
@@ -164,11 +164,11 @@ PL = {
     'faq.q1': 'Jak Traty czyta paragon?',
     'faq.a1': 'Robisz zdjęcie. Sumę, datę i walutę telefon odczytuje sam. Listę pozycji czyta model na naszym serwerze — to jedyny powód, dla którego zdjęcie opuszcza urządzenie. Bardzo długi paragon jest cięty na pasy i czytany po kawałku, a i tak liczy się jako jeden odczyt.',
     'faq.q2': 'Czy moje zdjęcie paragonu gdzieś zostaje?',
-    'faq.a2': 'Nie. Zdjęcie jedzie, żeby je odczytać, i nie jest przechowywane. Jeśli wolisz, żeby nic nie opuszczało telefonu, wyłącz rozpoznawanie w ustawieniach: wpisywanie ręczne, historia, kategorie, podziały i widżet działają dokładnie tak samo.',
+    'faq.a2': 'Nie. Zdjęcie trafia na serwer tylko po to, żeby je odczytać, i nie jest przechowywane. Jeśli wolisz, żeby nic nie opuszczało telefonu, wyłącz rozpoznawanie w ustawieniach: wpisywanie ręczne, historia, kategorie, zestawienia i widżet działają dokładnie tak samo.',
     'faq.q3': 'Czy to naprawdę za darmo?',
-    'faq.a3': 'Wpisywanie paragonów ręcznie, ich edycja, cała historia, kategorie, podziały, historia cen i widżet są darmowe i bez limitu, tak długo, jak używasz aplikacji. Płatny jest tylko odczyt zdjęcia, bo każdy kosztuje — dlatego plan darmowy zawiera pięć odczytów, a potem subskrypcja to 19,99 zł miesięcznie.',
+    'faq.a3': 'Wpisywanie paragonów ręcznie, ich edycja, cała historia, kategorie, zestawienia, historia cen i widżet są darmowe i bez limitu, tak długo, jak używasz aplikacji. Płatny jest tylko odczyt zdjęcia, bo każdy kosztuje — dlatego plan darmowy zawiera pięć odczytów, a potem subskrypcja to 19,99 zł miesięcznie.',
     'faq.q4': 'A jeśli model źle odczyta pozycję?',
-    'faq.a4': 'Popraw ją. Każde pole zmienia się dwoma dotknięciami — nazwa, cena, ilość, kategoria — a aplikacja ostrzega, kiedy pozycje przestają się sumować do wydrukowanej sumy, więc źle odczytana liczba zostaje złapana, a nie po cichu wliczona w miesiąc.',
+    'faq.a4': 'Popraw ją. Każde pole poprawisz dwoma dotknięciami — nazwa, cena, ilość, kategoria — a aplikacja ostrzega, kiedy pozycje przestają się sumować do wydrukowanej sumy, więc źle odczytana liczba zostaje złapana, a nie po cichu wliczona w miesiąc.',
     'faq.q5': 'Czy rodzina może dzielić jedną subskrypcję?',
     'faq.a5': 'Tak. Subskrybent zakłada rodzinę i zaprasza do czterech osób; dołączenie jest darmowe. Wszyscy widzą te same paragony i korzystają z tej samej miesięcznej puli, więc pięcioosobowa rodzina potrzebuje jednej subskrypcji, a nie pięciu.',
     'faq.q6': 'Jakie języki i waluty obsługuje?',
@@ -180,7 +180,7 @@ PL = {
     'final.h2': 'Przestań zbierać papier. Zacznij czytać liczby.',
     'final.lede': 'Pięć odczytów za darmo, bez karty, bez reklam. Jeśli przez tydzień nie zasłuży na miejsce na twoim ekranie, nic nie tracisz.',
 
-    'foot.made': 'Zrobił Oleksii Charoian',
+    'foot.made': 'Autor: Oleksii Charoian',
     'foot.privacy': 'Polityka prywatności',
     'foot.delete': 'Usuń swoje dane',
 
@@ -195,7 +195,7 @@ PL = {
 }
 
 UK = {
-    'meta.title': 'Traty — сфотографуй чек, він розкладеться сам | Сканер чеків',
+    'meta.title': 'Traty — сфотографуйте чек, він розкладеться сам | Сканер чеків',
     'meta.description': 'Сфотографуйте паперовий чек — Traty прочитає кожну позицію: назву, ціну, кількість і категорію — і покаже, на що насправді йде місяць. Безкоштовно на старті, на Android. Без ручного введення.',
     'meta.keywords': 'сканер чеків, додаток для чеків, облік витрат, сімейний бюджет android, продукти, історія цін, витрати за категоріями',
     'og.title': 'Сфотографуй чек. Він розкладеться сам.',
@@ -211,9 +211,9 @@ UK = {
     'nav.cta': 'Завантажити',
 
     'hero.eyebrow': 'Сканер чеків для Android',
-    'hero.h1a': 'Сфотографуй чек.',
+    'hero.h1a': 'Сфотографуйте чек.',
     'hero.h1b': 'Він розкладеться сам.',
-    'hero.lede': 'Кожен рядок прочитаний, оцінений і покладений у свою категорію — назва, кількість, ціна, усе. Місяць паперу перетворюється на кілька чисел, які справді можна прочитати.',
+    'hero.lede': 'Кожен рядок прочитано, оцінено й покладено у свою категорію — назва, кількість, ціна, усе. Місяць паперу перетворюється на кілька чисел, які справді можна прочитати.',
     'cta.play': 'Завантажити в Google Play',
     'hero.cta2': 'Подивитися, як це працює',
     'hero.trust1': 'Старт безкоштовний',
@@ -222,11 +222,11 @@ UK = {
     'scene.title': 'Розкладено за секунду',
     'scene.cap': 'Прочитано з фото',
 
-    'how.eyebrow': 'Три кроки, секунд десять',
+    'how.eyebrow': 'Три кроки, пів хвилини',
     'how.h2': 'Ви наводите камеру. Це вся робота.',
     'how.lede': 'Жоден додаток не зробив введення чека приємним, тому Traty про це й не просить. Сфотографуйте — і список прийде вже розібраним на позиції, а будь-який рядок можна виправити.',
     'how.s1h': 'Сфотографуйте',
-    'how.s1p': 'Зім’ятий, вицвілий, безглуздо довгий — просто наведіть і зніміть. Довгі чеки ріжуться на смуги і читаються частинами, і це однаково один чек.',
+    'how.s1p': 'Зім’ятий, вицвілий, безглуздо довгий — просто наведіть і зніміть. Довгі чеки ріжуться на смуги і читаються частинами, і це однаково одне розпізнавання.',
     'how.s1alt': 'Екран камери Traty, наведений на паперовий чек',
     'how.s2h': 'Він читає кожен рядок',
     'how.s2p': 'Назва, кількість, ціна за одиницю і категорія для кожної позиції. Суму, дату й валюту телефон читає сам.',
@@ -237,7 +237,7 @@ UK = {
 
     'month.eyebrow': 'На що йде місяць',
     'month.h2': 'Місяць покупок у шести числах.',
-    'month.p': 'Купа чеків не говорить нічого, форма — усе. Traty малює цей місяць поверх тих самих днів попереднього, тому перевитрата видно 9-го, а не 30-го.',
+    'month.p': 'Купа чеків не говорить нічого, форма — усе. Traty малює цей місяць поверх тих самих днів попереднього, тому перевитрату видно вже на початку місяця, а не наприкінці.',
     'month.li1': 'Сума наростаючим підсумком проти тих самих днів минулого місяця',
     'month.li2': 'Середній чек, витрата на день, зекономлене на знижках',
     'month.li3': 'Кожна категорія тримає свій колір, місяць за місяцем',
@@ -269,9 +269,9 @@ UK = {
     'edit.alt1': 'Розпізнаний чек у Traty, рядок за рядком на аркуші, схожому на папір',
     'edit.alt2': 'Екран витрат у Traty: місяць за місяцем, за категоріями',
 
-    'band.l1': 'категорій, кожна зі своїм кольором',
-    'band.l2': 'мови, вбудовані',
-    'band.l3': 'реклами, ніколи',
+    'band.l1': 'категорій, за якими розкладаються покупки',
+    'band.l2': 'вбудовані мови',
+    'band.l3': 'реклам, ніколи',
     'band.l4': 'чеків, введених руками, безкоштовно',
 
     'widget.eyebrow': 'Головний екран',
@@ -279,16 +279,16 @@ UK = {
     'widget.p': 'Віджет із місяцем і останніми чеками. Безкоштовний на будь-якому тарифі — він малює ті самі чеки, що вже у вас є, а брати гроші за погляд на власні числа було б дивною справою.',
     'widget.li1': 'Сума місяця й останні чеки з одного погляду',
     'widget.li2': 'Дотик веде просто до камери',
-    'widget.li3': 'Підлаштовується під світлий або темний вигляд телефона',
+    'widget.li3': 'Підлаштовується під світлий або темний вигляд додатка',
     'widget.alt': 'Віджет Traty на головному екрані Android із сумою місяця',
 
     'fam.eyebrow': "Один тариф, п'ятеро людей",
-    'fam.h2': "Сім'я купує разом. Отже, платить один раз.",
-    'fam.p': "Більшість додатків продають п'ять підписок на одну родину. Traty продає одну: підписник відкриває сім'ю і запрошує до чотирьох людей, а приєднання безкоштовне, навіть якщо вони ніколи ні за що не платили.",
-    'fam.li1': 'Одна спільна база чеків — хто б не купував, бачать усі',
+    'fam.h2': 'Сім’я робить покупки разом. Отже, платить один раз.',
+    'fam.p': 'Одна підписка замість п’яти: підписник відкриває сім’ю і запрошує до чотирьох людей, а приєднання безкоштовне, навіть якщо вони ніколи ні за що не платили.',
+    'fam.li1': 'Одна спільна база чеків — хто б що не купив, бачать усі',
     'fam.li2': 'Один спільний запас розпізнавань, з тарифу підписника',
     'fam.li3': 'У кожного свій телефон, свій вхід і своя мова',
-    'fam.li4': "Вийдете з сім'ї — власні безкоштовні спроби лишаються вашими",
+    'fam.li4': 'Вийдете з сім’ї — власні безкоштовні розпізнавання лишаються вашими',
     'fam.cta': 'Подивитися ціну',
     'fam.card': "Сім'я · 5 людей",
     'fam.owner': 'власник',
@@ -302,27 +302,27 @@ UK = {
     'priv.h2': 'Чек говорить про вас багато. Ми не лишаємо з цього майже нічого.',
     'priv.lede': 'Версія людською мовою. Юридична — внизу сторінки, і каже те саме, лише довше.',
     'priv.c1h': 'Фото не зберігається',
-    'priv.c1p': 'Воно їде, щоб його прочитали, і зникає. Нічого про вас не продається й не передається рекламодавцям, бо рекламодавців немає.',
+    'priv.c1p': 'Воно вирушає лише для того, щоб його прочитали, і зникає. Нічого про вас не продається й не передається рекламодавцям, бо рекламодавців немає.',
     'priv.c2h': 'Телефон робить свою частину',
-    'priv.c2p': 'Суму, дату й валюту читає сам пристрій. Сервер потрібен лише для списку позицій — це єдина причина, чому фото взагалі виїжджає.',
+    'priv.c2p': 'Суму, дату й валюту читає сам пристрій. Сервер потрібен лише для списку позицій — це єдина причина, чому фото взагалі залишає телефон.',
     'priv.c3h': 'Це можна вимкнути',
     'priv.c3p': 'Вимкніть розпізнавання — решта працює далі: ручне введення, історія, категорії, віджет. Видалення акаунта й даних — це сторінка, а не листування.',
 
     'pricing.h2': 'Тут коштує рівно одна річ.',
-    'pricing.lede': 'Читання фотографії оплачується за кожен чек — саме це й купує підписка. Ваша історія, ваші правки, ваші категорії, ваш віджет коштують нам нічого і вам теж. А одна підписка покриває сім’ю з п’ятьох.',
+    'pricing.lede': 'Читання фотографії оплачується за кожен чек — саме це й купує підписка. Ваша історія, ваші правки, ваші категорії, ваш віджет не коштують нічого ні нам, ні вам. А одна підписка покриває сім’ю з п’ятьох.',
     'plan.free': 'Безкоштовно',
     'plan.forever': ' / назавжди',
     'plan.freesub': 'Достатньо, щоб зрозуміти, чи воно вам підходить.',
     'plan.f1a': '5 розпізнавань чека',
     'plan.f1b': ' з фотографії',
     'plan.f2': 'Скільки завгодно чеків, введених руками',
-    'plan.f3': 'Уся історія, правка, категорії, розклади',
+    'plan.f3': 'Уся історія, правка, категорії, зведення',
     'plan.f4': 'Історія цін і віджет на головному екрані',
     'plan.f5': "Приєднання до чужої сім'ї",
     'plan.freecta': 'Почати безкоштовно',
     'plan.plus': 'Traty Plus',
     'plan.month': ' / місяць',
-    'plan.plussub': 'Для родини, яка купує по паперових чеках.',
+    'plan.plussub': 'Для родини, яка збирає паперові чеки.',
     'plan.p1': '20 розпізнавань на добу, 100 на місяць',
     'plan.p2': "Сім'я до п'яти осіб, одна спільна база",
     'plan.p3': 'Одна підписка на всю родину',
@@ -336,23 +336,23 @@ UK = {
     'faq.q1': 'Як Traty читає чек?',
     'faq.a1': 'Ви його фотографуєте. Суму, дату й валюту телефон читає сам. Список позицій читає модель на нашому сервері — це єдина причина, чому фотографія залишає пристрій. Дуже довгий чек ріжеться на смуги й читається частинами, і це однаково одне розпізнавання.',
     'faq.q2': 'Чи зберігається десь фото мого чека?',
-    'faq.a2': 'Ні. Фотографія їде, щоб її прочитали, і не зберігається. Якщо ви волієте, щоб із телефона не виходило нічого, вимкніть розпізнавання в налаштуваннях: ручне введення, історія, категорії, розклади й віджет працюють так само.',
+    'faq.a2': 'Ні. Фотографія вирушає лише для того, щоб її прочитали, і не зберігається. Якщо ви волієте, щоб із телефона не виходило нічого, вимкніть розпізнавання в налаштуваннях: ручне введення, історія, категорії, зведення й віджет працюють так само.',
     'faq.q3': 'Це справді безкоштовно?',
-    'faq.a3': 'Введення чеків руками, їх правка, уся історія, категорії, розклади, історія цін і віджет безкоштовні й без обмежень, доки ви користуєтеся додатком. Грошей коштує лише читання фотографії, тому безкоштовний тариф містить п’ять розпізнавань, а далі підписка — 149 ₴ на місяць.',
+    'faq.a3': 'Введення чеків руками, їх правка, уся історія, категорії, зведення, історія цін і віджет безкоштовні й без обмежень, доки ви користуєтеся додатком. Грошей коштує лише читання фотографії, тому безкоштовний тариф містить п’ять розпізнавань, а далі підписка — 149 ₴ на місяць.',
     'faq.q4': 'А якщо модель помилилася в рядку?',
     'faq.a4': 'Виправте його. Кожне поле редагується двома дотиками — назва, ціна, кількість, категорія — і додаток попереджає, коли рядки перестають складатися в надруковану суму, тож хибне число буде помічене, а не тихо вшите у ваш місяць.',
     'faq.q5': "Чи може сім'я ділити одну підписку?",
     'faq.a5': "Так. Підписник створює сім'ю і запрошує до чотирьох людей; приєднання безкоштовне. Усі бачать ті самі чеки й беруть з того самого місячного запасу, тому родині з п'ятьох потрібна одна підписка, а не п'ять.",
     'faq.q6': 'Які мови й валюти він розуміє?',
-    'faq.a6': 'Додаток говорить українською, польською, англійською та російською, а чеки читає у валюті, надрукованій на них, тож відпускний чек не перетвориться тихо на ваші домашні гроші.',
+    'faq.a6': 'Додаток говорить українською, польською, англійською та російською, а чеки читає у валюті, надрукованій на них, тож чек із відпустки не перетвориться тихо на ваші домашні гроші.',
     'faq.q7': 'На яких телефонах він працює?',
     'faq.a7': 'Android, із Google Play. Версії для iPhone поки немає.',
 
     'final.eyebrow': 'Ваш наступний чек',
     'final.h2': 'Годі збирати папір. Час читати числа.',
-    'final.lede': 'П’ять розпізнавань безкоштовно, без картки, без реклами. Якщо за тиждень він не заслужить місце на вашому екрані — ви нічого не втратили.',
+    'final.lede': 'П’ять розпізнавань безкоштовно, без картки, без реклами. Якщо за тиждень додаток не заслужить місце на вашому екрані — ви нічого не втратили.',
 
-    'foot.made': 'Зробив Oleksii Charoian',
+    'foot.made': 'Автор — Oleksii Charoian',
     'foot.privacy': 'Політика приватності',
     'foot.delete': 'Видалити свої дані',
 
@@ -405,6 +405,16 @@ CATEGORIES_UK = [
     ('Проїзд', '4%', 110.00),
     ('Решта · 11 категорій', '20%', 525.88),
 ]
+
+
+def curly(table):
+    """Апостроф в украинском — типографский (’), а не машинописный.
+
+    Строки набраны и так, и так, потому что часть из них в python-исходнике
+    заключена в одинарные кавычки; выравнивание здесь одно на весь словарь.
+    """
+    return {k: v.replace("\'", "\u2019") if isinstance(v, str) else v
+            for k, v in table.items()}
 
 
 def money(value, rate):
@@ -526,7 +536,7 @@ def main():
         build('pl', PL, ITEMS_PL, NOTES_PL, CATEGORIES_PL, PL_CFG),
         ensure_ascii=False, indent=2) + '\n')
     (CONTENT / 'uk.json').write_text(json.dumps(
-        build('uk', UK, ITEMS_UK, NOTES_UK, CATEGORIES_UK, UK_CFG),
+        build('uk', curly(UK), ITEMS_UK, NOTES_UK, CATEGORIES_UK, curly(UK_CFG)),
         ensure_ascii=False, indent=2) + '\n')
     print('записано content/pl.json и content/uk.json')
 
