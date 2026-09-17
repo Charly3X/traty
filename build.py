@@ -50,13 +50,11 @@ FONTS = {
         'fonts': 'https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;700&display=swap',
         'fontDisplay': '"Unbounded","Manrope",sans-serif',
         'fontMono': '"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace',
-        # Unbounded заметно шире Bricolage, а украинские слова длиннее
-        # английских: на прежних кеглях заголовок не помещался в 375 px.
-        'fontTweak': '''/* ── кегли под Unbounded ──────────────────────────────────────────────── */
-h1{font-size:clamp(2.1rem,4vw,3.3rem);letter-spacing:-.045em}
-@media(max-width:620px){h1{font-size:clamp(2rem,8.4vw,2.9rem)}}
-h2{font-size:clamp(1.75rem,3.9vw,3rem);letter-spacing:-.04em}
-@media(max-width:360px){h2{font-size:clamp(1.45rem,7vw,1.75rem)}}
+        # h1/h2 больше не здесь: их кегль считает контейнерная система
+        # (--h1-fit/--h2-fit ниже) — старые фиксированные clamp() лежали
+        # позже в каскаде и молча перебивали её только на этой странице,
+        # ровно то, что заводило слово за край на телефоне.
+        'fontTweak': '''/* ── кегли под Unbounded: то, что вне контейнерной системы ───────────── */
 h3{font-size:clamp(1.12rem,1.8vw,1.4rem)}
 .big{font-size:clamp(1.9rem,4vw,2.7rem)}
 .plan .price{font-size:clamp(1.9rem,3.4vw,2.5rem)}
