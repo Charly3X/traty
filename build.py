@@ -22,6 +22,7 @@ import json
 import pathlib
 import re
 import sys
+import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent
 TEMPLATE = ROOT / 'template.html'
@@ -40,13 +41,13 @@ LANG_NAMES = {'en': 'EN', 'pl': 'PL', 'uk': 'UA'}
 #: системного запасного шрифта.
 FONTS = {
     'latin': {
-        'fonts': 'https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&family=Courier+Prime:wght@400;700&display=swap',
+        'fonts': 'https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Manrope:wght@400;500;600;700&family=Courier+Prime:wght@400;700&display=swap',
         'fontDisplay': '"Bricolage Grotesque",Georgia,serif',
         'fontMono': '"Courier Prime",ui-monospace,SFMono-Regular,monospace',
         'fontTweak': '',
     },
     'cyrillic': {
-        'fonts': 'https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap',
+        'fonts': 'https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;700&display=swap',
         'fontDisplay': '"Unbounded","Manrope",sans-serif',
         'fontMono': '"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace',
         # Unbounded заметно шире Bricolage, а украинские слова длиннее
@@ -69,6 +70,20 @@ SCRIPT = {'en': 'latin', 'pl': 'latin', 'uk': 'cyrillic'}
 #: Цвета категорий — те же шестнадцать слотов, что в приложении
 #: (`lib/theme/app_colors.dart`), поэтому названы номерами слотов страницы.
 COLORS = ['var(--c1)', 'var(--c2)', 'var(--c3)', 'var(--c4)', 'var(--c5)', 'var(--c6)']
+
+
+#: Знаки, которых нет в тексте страницы, но которые рисуются: содержимое
+#: псевдоэлементов в стилях и запас на будущие правки. Без них символ не найдёт
+#: глифа и подставится системный шрифт — заметно.
+EXTRA_GLYPHS = (
+    '+◆↘−·—×∞…’«»%€$₴' 
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+    ' .,:;!?()[]/&@"\'-'
+)
+CYRILLIC_GLYPHS = (
+    'АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯЫЭЪ'
+    'абвгґдеєжзиіїйклмнопрстуфхцчшщьюяыэъ'
+)
 
 
 def esc(text):
@@ -413,7 +428,34 @@ def render(c, site):
     left = re.findall(r'\{\{[^}]{1,40}\}\}', page)
     if left:
         sys.exit('незакрытые плейсхолдеры в %s: %s' % (c['lang'], sorted(set(left))))
-    return page
+    return with_font_subset(page, c)
+
+
+def page_glyphs(page, lang):
+    """Набор знаков, которые страница действительно рисует.
+
+    Берётся из готовой разметки: теги, стили и сценарий выбрасываются, значения
+    атрибутов — тоже (alt и aria-label читает голос, глифов они не требуют).
+    """
+    body = re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', page, flags=re.S)
+    text = re.sub(r'<[^>]+>', ' ', body)
+    text = html.unescape(text)
+    glyphs = set(text) | set(EXTRA_GLYPHS)
+    if SCRIPT[lang] == 'cyrillic':
+        glyphs |= set(CYRILLIC_GLYPHS)
+    return ''.join(sorted(g for g in glyphs if g.isprintable() and not g.isspace()))
+
+
+def with_font_subset(page, c):
+    """Просит у Google только нужные знаки.
+
+    Полные латинские подмножества трёх семей весят около 430 КБ, а на странице
+    используется меньше сотни знаков: с `text=` остаются единицы килобайт, и это
+    самая тяжёлая часть страницы, а не картинки.
+    """
+    fonts = FONTS[SCRIPT[c['lang']]]['fonts']
+    subset = fonts + '&text=' + urllib.parse.quote(page_glyphs(page, c['lang']), safe='')
+    return page.replace(fonts, subset.replace('&', '&amp;'))
 
 
 def sitemap(site):
