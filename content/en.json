@@ -36,7 +36,7 @@
     "edit.alt1": "A recognised receipt in Traty, line by line on a paper-like sheet, every line editable",
     "how.s2alt": "Receipt items recognised in Traty: each line with name, quantity, price and category",
     "how.s3alt": "Traty dashboard with the month total, spend per day and a breakdown by category",
-    "dash.chartalt": "Running total for September is 21 percent below the same days of August",
+    "dash.chartalt": "Running total for September is 11 percent below the same days of August",
     "meta.title": "Traty — snap a receipt, it sorts itself | Receipt scanner for Android",
     "how.s1alt": "Traty camera screen aimed at a paper receipt, with the shutter ready",
     "edit.li2": "No camera? Type the receipt in by hand — free, always, however many",
@@ -163,168 +163,180 @@
   },
   "data": {
     "currency": "EUR",
-    "decimal": ".",
+    "decimal": ",",
     "month": "September",
     "prevMonth": "August",
-    "totalRaw": "660.10",
-    "receipts": "10 receipts",
-    "avg": "66.01",
-    "perDay": "60.01",
-    "saved": "3.25",
-    "savedLine": "Saved on discounts 3.25 EUR",
+    "totalRaw": "898.11",
+    "receipts": "16 receipts",
+    "avg": "56,13",
+    "perDay": "52,83",
+    "saved": "3,25",
+    "savedLine": "Saved on discounts 3,25 EUR",
+    "trend": "−11%",
     "categories": [
       [
         "Rent & bills",
-        "55%",
-        "362.50"
+        "40%",
+        "362,50"
+      ],
+      [
+        "Electronics",
+        "8%",
+        "74,49"
+      ],
+      [
+        "Car",
+        "7%",
+        "62,00"
       ],
       [
         "Fuel",
-        "9%",
-        "61.66"
+        "7%",
+        "61,56"
       ],
       [
-        "Services",
-        "6%",
-        "41.25"
-      ],
-      [
-        "Clothing",
+        "Health",
         "5%",
-        "35.73"
+        "45,00"
       ],
       [
-        "Fares",
-        "4%",
-        "27.50"
-      ],
-      [
-        "Other · 11 categories",
-        "20%",
-        "131.47"
+        "Other · 17 categories",
+        "33%",
+        "292,56"
       ]
     ],
     "paper": {
-      "shop": "GROSIK",
-      "meta": "ul. Kwiatowa 12 · 09.09.2026 · 11:20",
+      "shop": "HARVEST LANE",
+      "meta": "12 Market Street · 09.09.2026 · 11:20",
       "rows": [
         [
           "Chicken thighs",
-          "2 kg × 4.73",
-          "9.46"
+          "2 kg × 4,72",
+          "9,44"
         ],
         [
           "Potatoes",
-          "5 kg × 0.87",
-          "4.35"
+          "5 kg × 0,87",
+          "4,35"
         ],
         [
           "Milk 2%, 1 l",
-          "6 l × 1.25",
-          "7.50"
+          "6 l × 1,25",
+          "7,50"
         ],
         [
           "Rice, 1 kg",
-          "2 pcs × 2.25",
-          "4.50"
+          "2 pcs × 2,25",
+          "4,50"
         ],
         [
           "Frozen berries",
-          "2 pcs × 3.73",
-          "7.46"
+          "2 pcs × 3,72",
+          "7,44"
         ],
         [
           "Juice, 1 l",
-          "4 pcs × 1.87",
-          "7.48"
+          "4 pcs × 1,87",
+          "7,48"
         ],
         [
           "Cake",
-          "",
-          "8.23"
+          "1 pcs × 8,22",
+          "8,22"
+        ],
+        [
+          "Weekend discount",
+          "1 pcs × -2,25",
+          "-2,25"
         ]
       ],
       "total": [
         "TOTAL EUR",
-        "48.98"
+        "46,68"
       ]
     },
     "sorted": [
       [
         "Chicken thighs",
         "Meat · 2 kg",
-        "9.46",
+        "9,44",
         1
       ],
       [
         "Potatoes",
         "Produce · 5 kg",
-        "4.35",
+        "4,35",
         2
       ],
       [
         "Milk 2%, 1 l",
         "Dairy · 6 l",
-        "7.50",
+        "7,50",
         0
       ],
       [
         "Rice, 1 kg",
         "Pantry · 2 pcs",
-        "4.50",
+        "4,50",
         3
       ],
       [
         "Frozen berries",
-        "Frozen · 2 pcs",
-        "7.46",
+        "Produce · 2 pcs",
+        "7,44",
         4
       ],
       [
         "Juice, 1 l",
         "Drinks · 4 pcs",
-        "7.48",
+        "7,48",
         5
       ],
       [
         "Cake",
-        "Sweets · 1 pc",
-        "8.23",
+        "Bakery · 1 pcs",
+        "8,22",
         1
+      ],
+      [
+        "Weekend discount",
+        "Discount · 1 pcs",
+        "-2,25",
+        5
       ]
     ],
     "price": {
-      "shop": "Grosik",
+      "shop": "Harvest Lane",
       "item": "Milk 2%, 1 l",
       "raw": "1.25",
       "unit": "EUR per litre",
       "rise": "12% more than 02.08.2026",
-      "alt": "The price held at 1.12 four times and then rose to 1.25",
+      "alt": "The price held at 1,12 four times and then rose to 1,25",
       "rows": [
         [
           "09.09.2026",
           "top",
-          "1.25"
+          "1,25"
         ],
         [
           "02.09.2026",
           "low",
-          "1.12"
+          "1,12"
         ],
         [
           "30.08.2026",
           "low",
-          "1.12"
+          "1,12"
         ],
         [
           "09.08.2026",
           "low",
-          "1.12"
+          "1,12"
         ],
         [
           "02.08.2026",
           "low",
-          "1.12"
+          "1,12"
         ]
       ]
     },

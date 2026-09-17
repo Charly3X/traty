@@ -439,6 +439,7 @@ def build(lang, strings, items, notes, categories, cfg):
         'perDay': money(240.03, rate),
         'saved': money(13.00, rate),
         'savedLine': cfg['savedLine'],
+        'trend': '−21%',
         'categories': [[n, p, money(a, rate)] for n, p, a in categories],
         'paper': {
             'shop': cfg['shop'],

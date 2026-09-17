@@ -221,7 +221,7 @@ def block_dash(c):
         </svg>
         <div class="legend">
           <span style="color:#F97316"><i></i><span style="color:var(--ink-2)">{month}</span></span>
-          <span class="pill">↘ −21%</span>
+          <span class="pill">↘ {trend}</span>
           <span style="color:#7A7974"><i style="border-top-style:dotted;border-top-width:3px"></i><span style="color:var(--ink-2)">{prev}</span></span>
         </div>
       </div>
@@ -245,7 +245,7 @@ def block_dash(c):
         avgl=esc(s['dash.avg']), avg=esc(d['avg']), perdayl=esc(s['dash.perday']),
         perday=esc(d['perDay']), savedl=esc(s['dash.saved']), saved=esc(d['saved']),
         baralt=esc(s['dash.baralt']), bar=bar, rows=rows,
-        savedline=esc(d['savedLine']))
+        trend=esc(d['trend']), savedline=esc(d['savedLine']))
 
 
 def block_price(c):
