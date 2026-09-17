@@ -38,6 +38,13 @@ CATEGORIES = [
 ]
 
 OVERRIDES = {
+    # Заголовок выдачи: ключевое слово впереди, бренд в конце — Traty никто не
+    # ищет по имени, а обрезается заголовок примерно на шестидесяти знаках.
+    'meta.title': 'Receipt scanner that sorts spending by category — Traty',
+    'meta.description': 'Photograph a paper receipt: Traty reads every line — name, price, quantity, category — and shows where your month goes. Free to start on Android.',
+    'hero.lede': 'Every line read, priced and filed into a category — name, quantity, price, the lot. A month of paper turns into an expense tracker that fills itself in.',
+    'month.eyebrow': 'Spending by category',
+    'widget.eyebrow': 'Home-screen widget',
     # Не «у каждой свой цвет»: цветов шестнадцать на тридцать категорий, слоты
     # повторяются между группами, редкие берут нейтральный (`app_colors.dart`).
     'band.l1': 'categories it sorts your items into',
@@ -116,7 +123,9 @@ def main():
         'lang': 'en',
         'ogLocale': 'en_US',
         'assets': '/assets/en',
-        'play': 'https://play.google.com/store/apps/details?id=dev.charoian.traty',
+        # referrer доезжает до Play Console: без него не видно, сколько
+        # установок пришло со страницы, и воронку нечем мерить.
+        'play': 'https://play.google.com/store/apps/details?id=dev.charoian.traty&referrer=utm_source%3Dlanding%26utm_medium%3Dweb%26utm_campaign%3Den',
         'privacyUrl': 'https://scancheck-617d3.web.app/privacy.html',
         'deleteUrl': 'https://scancheck-617d3.web.app/delete-account.html',
         'strings': strings,

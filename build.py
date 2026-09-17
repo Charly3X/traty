@@ -16,6 +16,7 @@
 """
 
 import argparse
+import datetime as dt
 import html
 import json
 import pathlib
@@ -100,7 +101,9 @@ def block_head(c, site):
                 'operatingSystem': 'Android',
                 'description': s['meta.description'],
                 'url': url,
-                'installUrl': c['play'],
+                # В разметке — чистый адрес магазина: метка источника нужна
+                # кнопке, а поисковику полагается канонический адрес.
+                'installUrl': c['play'].split('&referrer=')[0],
                 'image': og,
                 'inLanguage': ['en', 'pl', 'uk', 'ru'],
                 'author': {'@type': 'Person', 'name': 'Oleksii Charoian',
@@ -124,7 +127,6 @@ def block_head(c, site):
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0B0B0B">
 <meta name="author" content="Oleksii Charoian">
-<meta name="keywords" content="{kw}">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Traty">
@@ -134,6 +136,7 @@ def block_head(c, site):
 <meta property="og:image" content="{og}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{ogalt}">
 <meta property="og:locale" content="{oglocale}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{ogt}">
@@ -145,9 +148,10 @@ def block_head(c, site):
 </script>
 
 '''.format(title=esc(s['meta.title']), desc=esc(s['meta.description']),
-           kw=esc(s['meta.keywords']), url=url, alts=alts, base=base, og=og,
+           url=url, alts=alts, base=base, og=og,
            ogt=esc(s['og.title']), ogd=esc(s['og.description']),
            twd=esc(s['tw.description']), oglocale=c['ogLocale'],
+           ogalt=esc(s['og.title']),
            ld=json.dumps(ld, ensure_ascii=False, indent=2))
 
 
@@ -402,7 +406,7 @@ def render(c, site):
         page = page.replace('{{%s}}' % key, value)
     page = page.replace('{{assets}}', BASE + c['assets'])
     page = page.replace('{{base}}', BASE)
-    page = page.replace('{{play}}', c['play'])
+    page = page.replace('{{play}}', esc(c['play']))
     for key, value in c['strings'].items():
         page = page.replace('{{%s}}' % key, value)
 
@@ -413,15 +417,62 @@ def render(c, site):
 
 
 def sitemap(site):
+    """Карта сайта с языковыми связками.
+
+    `changefreq` и `priority` не пишем: Google их не читает, а место занимают.
+    Зато каждая запись несёт `xhtml:link` на все языки — так поисковик видит
+    перевод, даже если не дошёл до `<head>` соседней страницы.
+    """
     base = site.rstrip('/')
+    today = dt.date.today().isoformat()
+    alts = '\n'.join(
+        '    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>'
+        % (l, base + ('/' if l == DEFAULT else '/%s/' % l))
+        for l in LANGS)
     urls = '\n'.join(
-        '  <url>\n    <loc>%s</loc>\n    <changefreq>monthly</changefreq>\n'
-        '    <priority>%s</priority>\n  </url>'
-        % (base + ('/' if l == DEFAULT else '/%s/' % l), '1.0' if l == DEFAULT else '0.9')
+        '  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n%s\n  </url>'
+        % (base + ('/' if l == DEFAULT else '/%s/' % l), today, alts)
         for l in LANGS)
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+            '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             '%s\n</urlset>\n' % urls)
+
+
+def not_found(site, conf):
+    """Своя страница 404: чужая страница GitHub уводит человека с сайта."""
+    langs = ' · '.join(
+        '<a href="%s">%s</a>' % ((BASE + '/') if l == DEFAULT else '%s/%s/' % (BASE, l),
+                                 LANG_NAMES[l])
+        for l in LANGS)
+    return f"""<!DOCTYPE html>
+<html lang="{DEFAULT}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page not found — Traty</title>
+<link rel="icon" href="{BASE}/assets/icon.png" sizes="180x180" type="image/png">
+<style>
+  body{{margin:0;min-height:100vh;display:grid;place-items:center;text-align:center;
+       background:#0B0B0B;color:#fff;font:400 17px/1.6 -apple-system,"Segoe UI",sans-serif}}
+  h1{{font-size:clamp(2rem,6vw,3rem);margin:0 0 .6rem;letter-spacing:-.03em}}
+  p{{color:#918F89;margin:0 0 1.6rem}}
+  a{{color:#FB923C}}
+  .btn{{display:inline-block;background:#F97316;color:#120A03;font-weight:700;
+        padding:.85rem 1.4rem;border-radius:999px;text-decoration:none}}
+</style>
+</head>
+<body>
+  <main>
+    <h1>This page is not here</h1>
+    <p>The link is wrong or the page has moved.</p>
+    <p><a class="btn" href="{BASE}/">Go to the start</a></p>
+    <p>{langs}</p>
+  </main>
+</body>
+</html>
+"""
 
 
 def main():
@@ -449,7 +500,8 @@ def main():
         (ROOT / 'sitemap.xml').write_text(sitemap(site))
         (ROOT / 'robots.txt').write_text(
             'User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' % site.rstrip('/'))
-        print('собрано: sitemap.xml, robots.txt')
+        (ROOT / '404.html').write_text(not_found(site, conf))
+        print('собрано: sitemap.xml, robots.txt, 404.html')
 
 
 if __name__ == '__main__':

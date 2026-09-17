@@ -18,13 +18,16 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONTENT = ROOT / 'content'
 
-PLAY = 'https://play.google.com/store/apps/details?id=dev.charoian.traty'
+# referrer доезжает до Play Console: по нему видно, сколько установок дала
+# страница и какой из языков.
+PLAY = ('https://play.google.com/store/apps/details?id=dev.charoian.traty'
+        '&referrer=utm_source%3Dlanding%26utm_medium%3Dweb%26utm_campaign%3D')
 PRIVACY = 'https://scancheck-617d3.web.app/privacy.html'
 DELETE = 'https://scancheck-617d3.web.app/delete-account.html'
 
 PL = {
-    'meta.title': 'Traty — zrób zdjęcie paragonu, reszta dzieje się sama | Skaner paragonów',
-    'meta.description': 'Sfotografuj paragon, a Traty odczyta każdą pozycję — nazwę, cenę, ilość i kategorię — i pokaże, na co naprawdę idzie miesiąc. Za darmo na start, na Androida. Bez wpisywania.',
+    'meta.title': 'Skaner paragonów: wydatki według kategorii — Traty',
+    'meta.description': 'Zrób zdjęcie paragonu: Traty odczyta każdą pozycję — nazwę, cenę, ilość, kategorię — i pokaże, na co idzie miesiąc. Start za darmo, na Androida.',
     'meta.keywords': 'skaner paragonów, aplikacja do paragonów, wydatki domowe, budżet domowy android, zakupy spożywcze, historia cen, wydatki według kategorii',
     'og.title': 'Zrób zdjęcie paragonu. Sam się poukłada.',
     'og.description': 'Traty czyta każdą pozycję paragonu — nazwę, cenę, ilość, kategorię — i zamienia miesiąc zakupów w kilka liczb, które widać na pierwszy rzut oka.',
@@ -41,7 +44,7 @@ PL = {
     'hero.eyebrow': 'Skaner paragonów na Androida',
     'hero.h1a': 'Sfotografuj paragon.',
     'hero.h1b': 'Sam się poukłada.',
-    'hero.lede': 'Każda pozycja odczytana, wyceniona i przypisana do kategorii — nazwa, ilość, cena, wszystko. Miesiąc papierków zamienia się w kilka liczb, które naprawdę da się przeczytać.',
+    'hero.lede': 'Każda pozycja odczytana, wyceniona i przypisana do kategorii — nazwa, ilość, cena, wszystko. Miesiąc papierków zamienia się w budżet domowy, który wypełnia się sam.',
     'cta.play': 'Pobierz z Google Play',
     'hero.cta2': 'Zobacz, jak to działa',
     'hero.trust1': 'Start za darmo',
@@ -63,7 +66,7 @@ PL = {
     'how.s3p': 'Każdy paragon trafia w jeden obraz miesiąca: suma, średnia, wydatek na dzień i dokładnie to, na co poszło.',
     'how.s3alt': 'Pulpit Traty: suma miesiąca, wydatek na dzień i podział na kategorie',
 
-    'month.eyebrow': 'Na co idzie miesiąc',
+    'month.eyebrow': 'Wydatki według kategorii',
     'month.h2': 'Miesiąc zakupów w sześciu liczbach.',
     'month.p': 'Sterta paragonów nie mówi nic, kształt mówi wszystko. Traty rysuje ten miesiąc na tle tych samych dni poprzedniego, więc przekroczenie widać w pierwszym tygodniu, a nie 30.',
     'month.li1': 'Suma narastająco na tle tych samych dni poprzedniego miesiąca',
@@ -102,7 +105,7 @@ PL = {
     'band.l3': 'reklam, nigdy',
     'band.l4': 'paragonów wpisanych ręcznie, za darmo',
 
-    'widget.eyebrow': 'Ekran główny',
+    'widget.eyebrow': 'Widżet na ekranie głównym',
     'widget.h2': 'Suma, bez otwierania czegokolwiek.',
     'widget.p': 'Widżet z miesiącem i ostatnimi paragonami. Za darmo na każdym planie — rysuje paragony, które już masz, a branie pieniędzy za podgląd własnych liczb byłoby dziwnym interesem.',
     'widget.li1': 'Suma miesiąca i ostatnie paragony na pierwszy rzut oka',
@@ -195,8 +198,8 @@ PL = {
 }
 
 UK = {
-    'meta.title': 'Traty — сфотографуйте чек, він розкладеться сам | Сканер чеків',
-    'meta.description': 'Сфотографуйте паперовий чек — Traty прочитає кожну позицію: назву, ціну, кількість і категорію — і покаже, на що насправді йде місяць. Безкоштовно на старті, на Android. Без ручного введення.',
+    'meta.title': 'Сканер чеків: витрати за категоріями — Traty',
+    'meta.description': 'Сфотографуйте чек: Traty прочитає кожну позицію — назву, ціну, кількість, категорію — і покаже, на що йде місяць. Старт безкоштовний, на Android.',
     'meta.keywords': 'сканер чеків, додаток для чеків, облік витрат, сімейний бюджет android, продукти, історія цін, витрати за категоріями',
     'og.title': 'Сфотографуй чек. Він розкладеться сам.',
     'og.description': 'Traty читає кожну позицію паперового чека — назву, ціну, кількість, категорію — і перетворює місяць покупок на кілька чисел, які видно з одного погляду.',
@@ -213,7 +216,7 @@ UK = {
     'hero.eyebrow': 'Сканер чеків для Android',
     'hero.h1a': 'Сфотографуйте чек.',
     'hero.h1b': 'Він розкладеться сам.',
-    'hero.lede': 'Кожен рядок прочитано, оцінено й покладено у свою категорію — назва, кількість, ціна, усе. Місяць паперу перетворюється на кілька чисел, які справді можна прочитати.',
+    'hero.lede': 'Кожен рядок прочитано, оцінено й покладено у свою категорію — назва, кількість, ціна, усе. Місяць паперу перетворюється на облік витрат, який веде себе сам.',
     'cta.play': 'Завантажити в Google Play',
     'hero.cta2': 'Подивитися, як це працює',
     'hero.trust1': 'Старт безкоштовний',
@@ -235,7 +238,7 @@ UK = {
     'how.s3p': 'Кожен чек лягає в одну картину місяця: сума, середнє, витрата на день і те, на що саме все пішло.',
     'how.s3alt': 'Головна Traty: сума місяця, витрата на день і розклад за категоріями',
 
-    'month.eyebrow': 'На що йде місяць',
+    'month.eyebrow': 'Витрати за категоріями',
     'month.h2': 'Місяць покупок у шести числах.',
     'month.p': 'Купа чеків не говорить нічого, форма — усе. Traty малює цей місяць поверх тих самих днів попереднього, тому перевитрату видно вже на початку місяця, а не наприкінці.',
     'month.li1': 'Сума наростаючим підсумком проти тих самих днів минулого місяця',
@@ -274,7 +277,7 @@ UK = {
     'band.l3': 'реклам, ніколи',
     'band.l4': 'чеків, введених руками, безкоштовно',
 
-    'widget.eyebrow': 'Головний екран',
+    'widget.eyebrow': 'Віджет на головному екрані',
     'widget.h2': 'Сума, не відкриваючи нічого.',
     'widget.p': 'Віджет із місяцем і останніми чеками. Безкоштовний на будь-якому тарифі — він малює ті самі чеки, що вже у вас є, а брати гроші за погляд на власні числа було б дивною справою.',
     'widget.li1': 'Сума місяця й останні чеки з одного погляду',
@@ -482,7 +485,7 @@ def build(lang, strings, items, notes, categories, cfg):
         'lang': lang,
         'ogLocale': cfg['ogLocale'],
         'assets': '/assets/%s' % lang,
-        'play': PLAY,
+        'play': PLAY + lang,
         'privacyUrl': PRIVACY,
         'deleteUrl': DELETE,
         'strings': strings,

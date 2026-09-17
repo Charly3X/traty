@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://charly3x.github.io/traty/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-09-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://charly3x.github.io/traty/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://charly3x.github.io/traty/pl/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://charly3x.github.io/traty/uk/"/>
   </url>
   <url>
     <loc>https://charly3x.github.io/traty/pl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://charly3x.github.io/traty/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://charly3x.github.io/traty/pl/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://charly3x.github.io/traty/uk/"/>
   </url>
   <url>
     <loc>https://charly3x.github.io/traty/uk/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://charly3x.github.io/traty/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://charly3x.github.io/traty/pl/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://charly3x.github.io/traty/uk/"/>
   </url>
 </urlset>
