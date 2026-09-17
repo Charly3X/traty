@@ -72,6 +72,30 @@ Search Console (`https://charly3x.github.io/traty/sitemap.xml`).
 Метка источника у ссылок в магазин (`referrer=utm_source%3Dlanding…`) доезжает
 до Play Console: по ней видно, сколько установок дала страница и какой язык.
 
+## Заголовки не рвутся посреди слова
+
+Кегль заголовка не подбирается на глаз: страница считает его сама из ширины
+колонки. В `:root` лежит `--h1-fit` — во сколько кеглей обходится самое длинное
+слово заголовка на этом языке (`Sfotografuj` — 5,28; `Сфотографуйте` — 10,43), а
+правило говорит `min(кегль, 100cqi / --h1-fit)`. Значения — в `FIT` в `build.py`.
+
+**Правите заголовки — пересчитайте долю.** В браузере на загруженной странице:
+
+```js
+const h = document.querySelector('h1'), cs = getComputedStyle(h);
+const p = document.createElement('span');
+p.style.cssText = `position:absolute;visibility:hidden;white-space:nowrap;
+  font:${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily};letter-spacing:${cs.letterSpacing}`;
+document.body.append(p);
+Math.max(...h.innerText.trim().split(/\s+/).map(w => (p.textContent = w,
+  p.getBoundingClientRect().width / parseFloat(cs.fontSize))));
+```
+
+Полученное число плюс 4% запаса. Мерить **после** `document.fonts.ready`: до
+загрузки шрифта браузер считает запасным, и тот заметно уже — на этом я один
+раз и обжёгся, объявив вёрстку чистой, когда польский заголовок рвался на всех
+ширинах от 1010 px.
+
 ## Что проверить перед публикацией
 
 1. **Адрес.** `content/site.json` — от него считаются canonical, hreflang,

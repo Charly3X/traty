@@ -215,6 +215,13 @@
   --body:"Manrope",-apple-system,"Segoe UI",sans-serif;
   --mono:"Courier Prime",ui-monospace,SFMono-Regular,monospace;
   --shell:min(1180px,100% - 3rem);
+  /* Кегли заголовков и предел по ширине колонки. `--h1-fit` — во сколько
+     кеглей обходится самое длинное слово заголовка на этом языке; замерено в
+     браузере, пересчитывать при правке заголовков (см. README). */
+  --h1-fit:3.67;
+  --h2-fit:4.76;
+  --h1-clamp:clamp(3.1rem,8.6vw,7rem);
+  --h2-clamp:clamp(2.3rem,5.2vw,4.1rem);
   --r:22px;
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -243,8 +250,8 @@ a{color:inherit}
 
 /* ── type ───────────────────────────────────────────────────────────── */
 h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height:.98;margin:0;overflow-wrap:break-word}
-h1{font-size:clamp(3.1rem,8.6vw,7rem)}
-h2{font-size:clamp(2.3rem,5.2vw,4.1rem);line-height:1}
+h1{font-size:min(var(--h1-clamp),calc(100cqi / var(--h1-fit)))}
+h2{font-size:min(var(--h2-clamp),calc(100cqi / var(--h2-fit)));line-height:1}
 h3{font-size:clamp(1.3rem,2.1vw,1.7rem);letter-spacing:-.02em;line-height:1.1}
 p{margin:0}
 .lede{font-size:clamp(1.08rem,1.55vw,1.32rem);color:var(--ink-2);line-height:1.55;max-width:46ch}
@@ -375,6 +382,7 @@ h1 .em{
 .js .rv[data-d="1"]{transition-delay:.09s}.js .rv[data-d="2"]{transition-delay:.18s}
 .js .rv[data-d="3"]{transition-delay:.27s}.js .rv[data-d="4"]{transition-delay:.36s}
 
+.hero-grid > div,.head,.copy,.final .rv{container-type:inline-size}
 .head{max-width:60ch;margin-bottom:clamp(2.6rem,5vw,4rem)}
 .head p{margin-top:1.2rem}
 
@@ -555,7 +563,7 @@ footer a:hover{border-bottom-color:var(--accent)}
 /* ── phones: the funnel's real audience ─────────────────────────────── */
 @media(max-width:620px){
   section{padding:clamp(3.4rem,12vw,5rem) 0}
-  h1{font-size:clamp(2.9rem,12.5vw,4rem)}
+  :root{--h1-clamp:clamp(2.9rem,12.5vw,4rem)}
   .steps{gap:2.8rem}
   .step .phone{max-width:330px;margin-inline:auto}
   .pair{grid-template-columns:1fr!important;max-width:330px;margin-inline:auto}
